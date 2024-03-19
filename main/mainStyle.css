@@ -274,6 +274,7 @@ body .cards-content {
   body .card-content .card-description-content .info-content p {
     color: #f4f3f2;
     overflow: hidden;
+    font-size: 12px;
     text-overflow: ellipsis;
     display: -webkit-box;
     margin-top: 10px;
