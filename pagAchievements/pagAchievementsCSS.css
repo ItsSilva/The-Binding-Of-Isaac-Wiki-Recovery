@@ -11,18 +11,19 @@ body{
 header .hero{
     width: 100%;
 }
-header nav#top{
+header nav#hero__top{
     background-color: #C69C39;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-header .logo-img{
+header .hero__img{
     height: 80px;
     width: auto;
     margin: 0.625rem;
 }
 /*Logo*/
+
 /* search bar */
 .box{
     height: 30px;
@@ -49,6 +50,7 @@ header .logo-img{
     font-size: 1.125rem;
 }
 /* search bar */
+
 /* Save Bottom */
 .saveBottom{
     height: 30px;
