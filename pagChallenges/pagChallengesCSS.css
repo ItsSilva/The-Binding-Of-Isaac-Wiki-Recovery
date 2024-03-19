@@ -16,12 +16,11 @@ header nav#top{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 27px 34px; */
 }
 header .logo-img{
     height: 80px;
     width: auto;
-    margin: 10px;
+    margin: 0.625rem;
 }
 /*Logo*/
 /* search bar */
@@ -29,9 +28,9 @@ header .logo-img{
     height: 30px;
     display: flex;
     flex-direction: row-reverse;
-    padding: 30px 60px;
+    padding: 1.875rem 3.75rem;
     background: #f4f3f2;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     gap: 20px;
@@ -47,14 +46,14 @@ header .logo-img{
 }
 .box a .fas{
     color: #1c1b21;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 /* search bar */
 /* Save Bottom */
 .saveBottom{
     height: 30px;
     display: flex;
-    padding: 30px;
+    padding: 1.875rem;
     /* background: white; */
     align-items: center;
 }
@@ -72,7 +71,7 @@ header .logo-img{
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 .sub-menu-wrap{
     position: absolute;
@@ -89,8 +88,8 @@ header .logo-img{
 }
 .sub-menu{
     background-color: #f4f3f2;
-    padding: 20px;
-    margin: 10px;
+    padding: 1.25rem;
+    margin: 0.625rem;
 }
 div.user-info{
     display: flex;
@@ -103,21 +102,21 @@ div.user-info img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 0.938rem;
 }
 .sub-menu hr{
     border: 0;
     height: 1px;
     width: 100%;
     background: #1c1b21;
-    margin: 15px 0 10px;
+    margin: 0.938rem 0 0.625rem;
 }
 .sub-meno-link{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #1c1b21;
-    margin: 12px 0;
+    margin: 0.75rem 0;
 }
 .sub-meno-link p{
     width: 100%;
@@ -129,11 +128,11 @@ a.sub-meno-link i{
     width: 40px;
     background-color: #C69C39;
     border-radius: 50%;
-    padding: 8px;
-    margin-right: 15px;
+    padding: 0.5rem;
+    margin-right: 0.938rem;
 }
 .sub-meno-link span{
-    font-size: 15px;
+    font-size: 0.938rem;
     transition: transform 0.5s;
 }
 .sub-meno-link:hover span{
@@ -150,14 +149,14 @@ a.sub-meno-link i{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 25px;
+    margin: 1.563rem;
 }
 .top-box-text{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    margin: 0 25px;
+    margin: 0 1.563rem;
 }
 div.top-box-text h1{
     color: #C69C39;
@@ -175,16 +174,16 @@ img.top-box-bosses{
 
 form.info-container h1{
     color: #C69C39;
-    padding: 20px;
-    margin: 25px;
+    padding: 1.25rem;
+    margin: 1.563rem;
 }
 form.info-container ul{
     background-color: #E30A13;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    margin: 25px;
-    border-radius: 25px;
+    padding: 1.25rem;
+    margin: 1.563rem;
+    border-radius: 1.563rem;
 }
 form.info-container li{
     list-style-type: none;
@@ -201,10 +200,10 @@ section.sizeTextinfoCards{
 }
 div.textinfoCards{
     background-color: #313131;
-    border-radius: 25px;
+    border-radius: 1.563rem;
     text-align: center;
-    padding: 25px;
-    margin: 25px auto;
+    padding: 1.563rem;
+    margin: 1.563rem auto;
     width: 800px;
 }
 div.textinfoCards h1{
@@ -216,14 +215,14 @@ div.tableContainer{
     max-width: 1200px;
     overflow: auto;
     position: relative;
-    margin: 25px auto;
+    margin: 1.563rem auto;
     width: fit-content;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 div.tableContainer::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
+	border-radius: 0.625rem;
 	background-color: #31313163;
 }
 
@@ -231,18 +230,18 @@ div.tableContainer::-webkit-scrollbar
 {
 	width: 12px;
 	background-color: #31313163;
-    border-radius: 12px;
+    border-radius: 0.75rem;
 }
 
 div.tableContainer::-webkit-scrollbar-thumb
 {
-	border-radius: 10px;
+	border-radius: 0.625rem;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #C69C39;
 }
 #infoCards{
     border-collapse:separate;
-    border-spacing:0 15px;
+    border-spacing:0 0.938rem;
 }
 #infoCards thead{
     border: 0;
@@ -252,17 +251,17 @@ div.tableContainer::-webkit-scrollbar-thumb
 #infoCards thead tr th{
     color: #f4f3f2;
     background-color: #E30A13;
-    padding: 15px;
+    padding: 0.938rem;
 }
 #infoCards thead tr > :first-child, #infoCards tbody tr > :first-child{
-    border-radius: 25px 0 0 25px;
+    border-radius: 1.563rem 0 0 1.563rem;
 }
 #infoCards thead tr > :last-child, #infoCards tbody tr > :last-child{
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 1.563rem 1.563rem 0;
 }
 #infoCards tbody tr td img{
     max-width: 60px;
-    margin: 25px auto;
+    margin: 1.563rem auto;
 }
 #infoCards tbody tr td ul li{
     list-style: none;
@@ -288,7 +287,7 @@ div.tableContainer::-webkit-scrollbar-thumb
     color: #f4f3f2;
     text-align: center;
     min-width: 100px;
-    padding: 15px 10px;
+    padding: 0.938rem 0.625rem;
 }
 /* infoCards */
 
@@ -299,7 +298,7 @@ footer{
 .footerContainer{
     background-color: #C69C39;
     width: 100%;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,9 +310,9 @@ footer{
 }
 .socialIcons a.icon{
     text-decoration: none;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #1c1b21;
-    margin: 10px;
+    margin: 0.625rem;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -329,7 +328,7 @@ footer{
     background: none;
 }
 .socialIcons a i{
-    font-size: 25px;
+    font-size: 1.563rem;
     color: #f4f3f2;
     opacity: 0.9;
 }
@@ -348,7 +347,7 @@ footer{
     transition: 0.5s;
 }
 .footerNav{
-    margin: 30px 0;
+    margin: 1.875rem 0;
 }
 .footerNav ul{
     display: flex;
@@ -356,9 +355,9 @@ footer{
 }
 .footerNav ul li a{
     color: white;
-    margin: 20px;
+    margin: 1.25rem;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     opacity: 0.7;
     transition: 0.5s;
 }
@@ -367,7 +366,7 @@ footer{
 }
 .footerBottom{
     background-color: #1c1b21;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 .footerBottom p{
@@ -376,9 +375,9 @@ footer{
 .designer{
     opacity: 0.7;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     font-weight: 400;
-    margin: 0px 5px;
+    margin: 0 0.313rem;
 }
 img.logo-img{
     height: 50px;
