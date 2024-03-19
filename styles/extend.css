@@ -1,0 +1,265 @@
+@font-face {
+  font-family: Determination;
+  src: url(/fonts/DTM-Mono.otf);
+}
+* {
+  font-family: Determination;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.primary-button {
+  background-color: #1C1B21;
+  border: 1px solid #C69C39;
+  border-radius: 50px;
+  color: #f4f3f2;
+  padding: 10px 30px;
+  text-decoration: none;
+  box-shadow: 0px -8px 7px -1px #0C0C0C;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.primary-button:hover {
+  background-color: #C69C39;
+  transform: scale(1.1);
+}
+.secondary-button {
+  background-color: #851419;
+  border: none;
+  border-radius: 50px;
+  color: #f4f3f2;
+  padding: 10px 30px;
+  text-decoration: none;
+  box-shadow: 0px -8px 7px -1px #0C0C0C;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  background-color: #E30A13;
+  transform: scale(1.1);
+}
+html body {
+  background-color: #1C1B21;
+}
+html body .register-step {
+  display: none !important;
+}
+html body .register-step.active {
+  display: flex !important;
+}
+html body .title {
+  text-align: center;
+}
+html body .title h1 {
+  font-size: 150px;
+  color: #f4f3f2;
+}
+html body .title span {
+  font-size: 40px;
+  color: #f4f3f2;
+  text-align: center;
+}
+html body .show-password-container {
+  border-bottom: 1px solid #f4f3f2;
+  display: flex;
+}
+html body .show-password-container input.passwordInput {
+  all: unset;
+  width: 100%;
+  color: #f4f3f2;
+  padding: 10px 0 10px 29px;
+}
+html body .show-password-container input.toggleVisibility {
+  all: unset;
+  background-image: url("../resorces/TBOI_Pag/Items_PNG/Collectible_Eye_of_the_Occult_icon.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+}
+html body .welcome-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+html body .welcome-page .primary-button {
+  font-size: 48px;
+}
+html body .welcome-page img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+html body .register-container .register-step {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+html body .register-container .register-step .finish-image-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+html body .register-container .register-step .finish-image-container img.finish-image {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: -30px;
+}
+html body .step-action {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+html body .step-action .input {
+  border-bottom: 1px solid #f4f3f2;
+  display: flex;
+}
+html body .step-action .input input {
+  all: unset;
+  width: 100%;
+  color: #f4f3f2;
+  padding: 10px 0;
+}
+html body .step-action button:not(.primary-button) {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: #f4f3f2;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+html body ul.progress-bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+html body ul.progress-bar li {
+  background-color: #D9D9D9;
+  height: 10px;
+  flex: 1;
+  min-width: 50px;
+  list-style: none;
+}
+html body ul.progress-bar li.active,
+html body ul.progress-bar li.checked {
+  background-color: #C69C39;
+}
+html body .login-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+html body .login-container .step-action {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+html body .login-container .step-action .input {
+  position: relative;
+  margin-bottom: 30px;
+}
+html body .login-container .step-action .input label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  color: #f4f3f2;
+}
+html body .login-container h2 {
+  color: #f4f3f2;
+}
+html body .login-container .bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+html body .login-container .bottom-container .finish-image-container .finish-image {
+  width: 100px;
+}
+html body .cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+html body .card {
+  background-image: url('/resorces/TBOI_Pag/Backgrounds_Pag/Fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  position: relative;
+  padding-bottom: 50%;
+  transition: all ease 0.5s;
+}
+html body .card:hover {
+  transform: scale(1.04);
+}
+html body .card .card-image img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+html body .card .card-description {
+  display: flex;
+  align-items: center;
+  background-color: rgba(12, 12, 12, 0.5);
+  box-shadow: 0px -17px 17px 11px rgba(12, 12, 12, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+}
+html body .card .card-description .info {
+  flex: 2;
+}
+html body .card .card-description .info .card-name {
+  color: #f4f3f2;
+}
+html body .card .card-description .info p {
+  color: #f4f3f2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+html body .card .card-description .life {
+  flex: 1;
+}
+html body .owl-carousel {
+  position: relative;
+}
+html body .owl-carousel .owl-nav {
+  position: unset;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+html body .owl-carousel .owl-nav button {
+  position: absolute;
+  top: calc(50% - 10px);
+  background-color: #C69C39 !important;
+  border-radius: 8px;
+}
+html body .owl-carousel .owl-nav button.owl-prev {
+  padding: 10px !important;
+  left: 10px;
+}
+html body .owl-carousel .owl-nav button.owl-next {
+  right: 10px;
+  padding: 10px !important;
+}
