@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../resorces/TBOI_Pag/Characters_PNG/Isaac.png" type="image/webp">
+    <link rel="stylesheet" href="pagItemsCSS.css">
+    <link rel="stylesheet" href="/styles/extend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bosses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+
+        <!--Logo-->
+        <div class="hero">
+            <nav id="top">
+                <a class="logo" href="../main/main.html">
+                    <img class="logo-img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
+                </a>
+                <!--Logo-->
+
+                <!-- Searchbar -->
+                <div class="box">
+                    <input type="text" placeholder="Search...">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <!-- Searchbar -->
+
+                <!-- Save Bottom -->
+                <div class="saveBottom">
+                    <input type="button">
+                    <a href="../pagSave/pagSave.html">
+                        <i class="fa-solid fa-bookmark fa-2x" style="color:#1c1b21;"></i>
+                    </a>
+                    <!-- Save Bottom -->
+
+                    <!-- Drop-down Profile -->
+                    <img class="user-pic" onclick="toggleMenu()" src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+                                <h3>User name</h3>
+                            </div>
+                            <hr>
+
+                            <a class="sub-meno-link" href="../profile/profile.html">
+                                <i class="fa-solid fa-user" style="color: #1c1b21;"></i>
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                            <a class="sub-meno-link" href="../profile/profile.html">
+                                <i class="fa-solid fa-gear" style="color: #1c1b21;"></i>
+                                <p>Settings & privacy</p>
+                                <span>></span>
+                            </a>
+                            <a class="sub-meno-link"
+                                href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/">
+                                <i class="fa-brands fa-steam" style="color: #1c1b21;"></i>
+                                <p>Steam Game Store</p>
+                                <span>></span>
+                            </a>
+                            <a class="sub-meno-link" href="../index/index.html">
+                                <i class="fa-solid fa-right-from-bracket" style="color: #1c1b21;"></i>
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <!-- Save Bottom -->
+        <!-- Drop-down Profile -->
+
+    </header>
+
+    <!-- infoCards -->
+    <section class="sizeTextinfoCards">
+        <div class="textinfoCards">
+            <h1>Bosses</h1>
+        </div>
+
+        <div class="tableContainer">
+            <table id="infoCards">
+                <!-- info -->
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Behavior</th>
+                        <th>Save</th>
+                    </tr>
+                </thead>
+                <!-- info -->
+
+                <tbody>
+
+                    <!-- Dingle -->
+                    <tr>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Bosses_PNG/Boss_Dingle_portrait.webp" alt="">
+                        </td>
+                        <td>
+                            <h2>Dingle</h2>
+                        </td>
+                        <td>
+                            <p>Dingle remains stationary and performs the following attacks:</p>
+                            <ul>
+                                <li>
+                                    Fires 3 projectiles towards Isaac.</li>
+                                <li>Whistles before summoning 1-3 Dips and then fires 3 projectiles at Isaac.</li>
+                                <li>Quickly performs 3 long dashes towards Isaac while bouncing off obstacles and walls,
+                                    after which he pauses to catch his breath.</li>
+                                <li>Dips caught in his dashes are knocked back a distance.</li>
+                                <li>Occasionally, Dingle will leave behind a Poop while using this attack.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Dingle -->
+
+                    <!-- The Duke of Flies -->
+                    <tr>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Bosses_PNG/Boss_The_Duke_of_Flies_portrait.webp" alt="">
+                        </td>
+                        <td>
+                            <h2>The Duke of Flies</h2>
+                        </td>
+                        <td>
+                            <p>The Duke of Flies constantly floats around the room in diagonal directions. Knockback
+                                from tears and other sources can cause him to change travel direction. He has three
+                                attacks that he can perform while he floats:
+                            </p>
+                            <ul>
+                                <li>Spawns 3 Attack Flies that will orbit around him, blocking shots.
+                                </li>
+                                <li>Spawns a larger Attack Fly that will chase Isaac.
+                                </li>
+                                <li>Sends any orbital Flies outward to chase Isaac.
+                                </li>
+                                <li>He can only perform this attack if he has 5-6 orbiting Flies.
+                                </li>
+                                <li>If he has 4 orbiting Flies, he cannot perform this attack nor can he spawn more as
+                                    it would exceed his limit resulting in him only spawning the larger Attack Flies.
+                                </li>
+                                <li>The Duke of Flies will never spawn Flies if 12 already exist.
+                                </li>
+                                <li>Upon death, all orbiting Flies will be free to chase Isaac.
+                                </li>
+                                <li>(in Repentance) Spawns 6 random Flies or Attack Flies upon death.
+                                </li>
+                                <li>Unlike regular Attack Flies, the ones spawned by The Duke of Flies can be killed if
+                                    Isaac walks into them, though they will still deal contact damage before dying.
+                                </li>
+                                <li>(in Repentance) This does not include the Attack Flies spawned on death.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- The Duke of Flies -->
+
+                    <!-- Gemini -->
+                    <tr>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Bosses_PNG/Boss_Gemini_portrait.webp" alt="">
+                        </td>
+                        <td>
+                            <h2>Gemini</h2>
+                        </td>
+                        <td>
+                            <p>Gemini starts as a pair of bosses connected together by an umbilical cord:</p>
+                            <ul>
+                                <li>Contusion chases Isaac and periodically charges increasing his speed, but stops to
+                                    catch his breath afterwards.</li>
+                                <li>Suture, while attached to Contusion, shoots a projectile towards Isaac if not behind
+                                    an obstacle.</li>
+                                <li>If Contusion is killed first, Suture detaches and begins charging furiously at
+                                    Isaac. He has high momentum and takes extra knock-back from tears which can cause
+                                    him to gain speed.</li>
+                                <li>If Suture is killed first, there is no change to Contusion's behavior.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Gemini -->
+
+                    <!-- Monstro -->
+                    <tr>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Bosses_PNG/Boss_Monstro_portrait.webp" alt="">
+                        </td>
+                        <td>
+                            <h2>Monstro</h2>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Hops towards Isaac.</li>
+                                <li>Coughs up a large number of disorganized projectiles towards Isaac.</li>
+                                <li>Jumps off-screen, aiming to land on top of Isaac. Create a burst of disorganized
+                                    projectiles in all directions on landing.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Monstro -->
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- infoCards -->
+
+</body>
+<footer>
+    <div class="footerContainer">
+        <a class="logo" href="../main/main.html">
+            <img class="logo-img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
+        </a>
+        <div class="socialIcons">
+            <a class="icon" href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a class="icon" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="icon" href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+            <a class="icon" href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">ItsSilva & Makurezzz</span> </p>
+    </div>
+
+    <script src="pagBossesJS.js"></script>
+</footer>
+
+</html>
