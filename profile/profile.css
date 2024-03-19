@@ -19,12 +19,11 @@ header nav#top {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* padding: 27px 34px; */
 }
 header .logo-img {
   height: 80px;
   width: auto;
-  margin: 10px;
+  margin: 0.625rem;
 }
 /*Logo*/
 /* search bar */
@@ -32,9 +31,9 @@ header .logo-img {
   height: 30px;
   display: flex;
   flex-direction: row-reverse;
-  padding: 30px 60px;
+  padding: 1.875rem 3.75rem;
   background: #f4f3f2;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   align-items: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   gap: 20px;
@@ -50,15 +49,14 @@ header .logo-img {
 }
 .box a .fas {
   color: #1c1b21;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 /* search bar */
 /* Save Bottom */
 .saveBottom {
   height: 30px;
   display: flex;
-  padding: 30px;
-  /* background: white; */
+  padding: 1.875rem;
   align-items: center;
 }
 .saveBottom input {
@@ -66,7 +64,6 @@ header .logo-img {
   border: none;
 }
 .saveBottom a .fa {
-  /* color: red; */
   font-size: 0.5rem;
 }
 /* Save Bottom */
@@ -75,14 +72,14 @@ header .logo-img {
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 .sub-menu-wrap {
   position: absolute;
   top: 14%;
   right: 9%;
   width: 320px;
-  max-height: 0px;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
 }
@@ -91,8 +88,8 @@ header .logo-img {
 }
 .sub-menu {
   background-color: #f4f3f2;
-  padding: 20px;
-  margin: 10px;
+  padding: 1.25rem;
+  margin: 0.625rem;
 }
 div.user-info {
   display: flex;
@@ -105,21 +102,21 @@ div.user-info img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 0.938rem;
 }
 .sub-menu hr {
   border: 0;
   height: 1px;
   width: 100%;
   background: #1c1b21;
-  margin: 15px 0 10px;
+  margin: 0.938rem 0 0.625rem;
 }
 .sub-meno-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #1c1b21;
-  margin: 12px 0;
+  margin: 0.75rem 0;
 }
 .sub-meno-link p {
   width: 100%;
@@ -131,11 +128,11 @@ a.sub-meno-link i {
   width: 40px;
   background-color: #C69C39;
   border-radius: 50%;
-  padding: 8px;
-  margin-right: 15px;
+  padding: 0.5rem;
+  margin-right: 0.938rem;
 }
 .sub-meno-link span {
-  font-size: 15px;
+  font-size: 0.938rem;
   transition: transform 0.5s;
 }
 .sub-meno-link:hover span {
@@ -181,7 +178,7 @@ a.sub-meno-link i {
   background-size: contain;
 }
 .nick {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 200;
   color: #ffffff;
 }
@@ -225,10 +222,10 @@ p.settings {
 }
 .primary-button {
   background-color: #1C1B21;
-  border: 1px solid #C69C39;
-  border-radius: 50px;
+  border: 0.063rem solid #C69C39;
+  border-radius: 3.125rem;
   color: #f4f3f2;
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem;
   text-decoration: none;
   box-shadow: 0px -5px 7px -1px #0c0c0c8f;
   transition: all ease 0.5s;
@@ -243,9 +240,9 @@ p.settings {
   display: block;
   background-color: #851419;
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   color: #f4f3f2;
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem;
   text-decoration: none;
   box-shadow: 0px -5px 7px -1px #0c0c0c8f;
   transition: all ease 0.5s;
@@ -261,7 +258,7 @@ footer {
 .footerContainer {
   background-color: #C69C39;
   width: 100%;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
 }
 .socialIcons {
   display: flex;
@@ -270,9 +267,9 @@ footer {
 }
 .socialIcons a.icon {
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #1c1b21;
-  margin: 10px;
+  margin: 0.625rem;
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -288,7 +285,7 @@ footer {
   background: none;
 }
 .socialIcons a i {
-  font-size: 80px;
+  font-size: 5rem;
   color: #f4f3f2;
   opacity: 0.9;
 }
@@ -307,7 +304,7 @@ footer {
   transition: 0.5s;
 }
 .footerNav {
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
 .footerNav ul {
   display: flex;
@@ -315,9 +312,9 @@ footer {
 }
 .footerNav ul li a {
   color: white;
-  margin: 20px;
+  margin: 1.25rem;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   opacity: 0.7;
   transition: 0.5s;
 }
@@ -326,7 +323,7 @@ footer {
 }
 .footerBottom {
   background-color: #1c1b21;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 .footerBottom p {
@@ -335,9 +332,9 @@ footer {
 .designer {
   opacity: 0.7;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.063rem;
   font-weight: 400;
-  margin: 0px 5px;
+  margin: 0 0.313rem;
 }
 /* Footer Effects */
 /* Footer */
