@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(../resorces/TBOI_Pag/Backgrounds_Pag/Property\ 1=Default.png);
+  background-repeat: no-repeat;
+  background-color: #1C1B21;
+  background-size: contain;
+}
+/*Logo*/
+header .hero {
+  width: 100%;
+}
+header nav#top {
+  background-color: #C69C39;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 27px 34px; */
+}
+header .logo-img {
+  height: 80px;
+  width: auto;
+  margin: 10px;
+}
+/*Logo*/
+/* search bar */
+.box {
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px 60px;
+  background: #f4f3f2;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+}
+.box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+  width: 450px;
+}
+.box a .fas {
+  color: #1c1b21;
+  font-size: 18px;
+}
+/* search bar */
+/* Save Bottom */
+.saveBottom {
+  height: 30px;
+  display: flex;
+  padding: 30px;
+  /* background: white; */
+  align-items: center;
+}
+.saveBottom input {
+  outline: none;
+  border: none;
+}
+.saveBottom a .fa {
+  /* color: red; */
+  font-size: 0.5rem;
+}
+/* Save Bottom */
+/* Drop-down Profile */
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.sub-menu-wrap {
+  position: absolute;
+  top: 14%;
+  right: 9%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+.sub-menu {
+  background-color: #f4f3f2;
+  padding: 20px;
+  margin: 10px;
+}
+div.user-info {
+  display: flex;
+  align-items: center;
+}
+div.user-info h3 {
+  font-weight: 500;
+}
+div.user-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #1c1b21;
+  margin: 15px 0 10px;
+}
+.sub-meno-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1c1b21;
+  margin: 12px 0;
+}
+.sub-meno-link p {
+  width: 100%;
+}
+a.sub-meno-link i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  background-color: #C69C39;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+.sub-meno-link span {
+  font-size: 15px;
+  transition: transform 0.5s;
+}
+.sub-meno-link:hover span {
+  transform: translateX(5px);
+  font-weight: 600;
+}
+.sub-meno-link:hover p {
+  font-weight: 600;
+}
+/* Drop-down Profile */
+.entire {
+  width: 100%;
+  flex-direction: row;
+}
+.prof {
+  width: 100%;
+  height: 730px;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cuadrado {
+  -max-width: 650px;
+  width: 600px;
+  height: 500px;
+  background-color: #313131;
+  box-shadow: 0px 9px 22px rgba(0, 0, 0, 0.52);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  gap: 20px;
+}
+.FDP {
+  width: 180px;
+  height: 180px;
+  background-image: url(../resorces/TBOI_Pag/AboutUs_PNG/juan-silva.png);
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+}
+.nick {
+  font-size: 30px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.HEARTS {
+  display: flexbox;
+  justify-content: center;
+}
+.heart1 {
+  width: 40px;
+}
+.heart2 {
+  width: 40px;
+}
+.HEART3 {
+  width: 40px;
+}
+.prof2 {
+  width: 50%;
+  height: 735px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cuadrado2 {
+  -max-width: 650px;
+  width: 600px;
+  height: 500px;
+  background-color: #313131;
+  box-shadow: 0px 9px 22px rgba(0, 0, 0, 0.52);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  gap: 20px;
+  text-align: center;
+}
+p.settings {
+  color: #C69C39;
+  font-size: 2rem;
+}
+.primary-button {
+  background-color: #1C1B21;
+  border: 1px solid #C69C39;
+  border-radius: 50px;
+  color: #f4f3f2;
+  padding: 10px 30px;
+  text-decoration: none;
+  box-shadow: 0px -5px 7px -1px #0c0c0c8f;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.primary-button:hover {
+  display: block;
+  background-color: #C69C39;
+  transform: scale(1.1);
+}
+.secondary-button {
+  display: block;
+  background-color: #851419;
+  border: none;
+  border-radius: 50px;
+  color: #f4f3f2;
+  padding: 10px 30px;
+  text-decoration: none;
+  box-shadow: 0px -5px 7px -1px #0c0c0c8f;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  background-color: #E30A13;
+  transform: scale(1.1);
+}
+footer {
+  background-color: #000;
+}
+.footerContainer {
+  background-color: #C69C39;
+  width: 100%;
+  padding: 20px 30px;
+}
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socialIcons a.icon {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #1c1b21;
+  margin: 10px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIcons a.icon:hover {
+  background-color: #f4f3f2;
+  transition: 0.5s;
+}
+.socialIcons a.logo {
+  background: none;
+}
+.socialIcons a i {
+  font-size: 80px;
+  color: #f4f3f2;
+  opacity: 0.9;
+}
+.socialIcons a i:hover::before {
+  color: #1c1b21;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+/* Footer Effects */
+.socialIcons a:hover {
+  background-color: #f4f3f2;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #1c1b21;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/* Footer Effects */
+/* Footer */
