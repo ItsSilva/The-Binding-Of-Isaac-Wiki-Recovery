@@ -17,12 +17,11 @@ header nav#top{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 27px 34px; */
 }
 header .logo-img{
     height: 80px;
     width: auto;
-    margin: 10px;
+    margin: 0.625rem;
 }
 /*Logo*/
 /* search bar */
@@ -30,9 +29,9 @@ header .logo-img{
     height: 30px;
     display: flex;
     flex-direction: row-reverse;
-    padding: 30px 60px;
+    padding: 1.875rem 3.75rem;
     background: #f4f3f2;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     gap: 20px;
@@ -48,15 +47,14 @@ header .logo-img{
 }
 .box a .fas{
     color: #1c1b21;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 /* search bar */
 /* Save Bottom */
 .saveBottom{
     height: 30px;
     display: flex;
-    padding: 30px;
-    /* background: white; */
+    padding: 1.875rem;
     align-items: center;
 }
 .saveBottom input{
@@ -73,7 +71,7 @@ header .logo-img{
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 .sub-menu-wrap{
     z-index: 100;
@@ -90,8 +88,8 @@ header .logo-img{
 }
 .sub-menu{
     background-color: #f4f3f2;
-    padding: 20px;
-    margin: 10px;
+    padding: 1.25rem;
+    margin: 0.625rem;
 }
 div.user-info{
     display: flex;
@@ -104,21 +102,21 @@ div.user-info img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 0.938rem;
 }
 .sub-menu hr{
     border: 0;
     height: 1px;
     width: 100%;
     background: #1c1b21;
-    margin: 15px 0 10px;
+    margin: 0.938rem 0 0.625rem;
 }
 .sub-meno-link{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #1c1b21;
-    margin: 12px 0;
+    margin: 0.75rem 0;
 }
 .sub-meno-link p{
     width: 100%;
@@ -130,11 +128,11 @@ a.sub-meno-link i{
     width: 40px;
     background-color: #C69C39;
     border-radius: 50%;
-    padding: 8px;
-    margin-right: 15px;
+    padding: 0.5rem;
+    margin-right: 0.938rem;
 }
 .sub-meno-link span{
-    font-size: 15px;
+    font-size: 0.938rem;
     transition: transform 0.5s;
 }
 .sub-meno-link:hover span{
@@ -151,14 +149,14 @@ a.sub-meno-link i{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 25px;
+    margin: 1.563rem;
 }
 .top-box-text{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    margin: 0 25px;
+    margin: 0 1.563rem;
 }
 div.top-box-text h1{
     color: #C69C39;
@@ -193,7 +191,7 @@ img.displaySlide{
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    padding: 10px 15px;
+    padding: 0.625rem 0.938rem;
     background-color: #C69C39;
     color: #f4f3f2;
     border: none;
@@ -214,19 +212,19 @@ img.displaySlide{
 /* Content */
 section.index-aboutus{
     background-color: #313131;
-    border-radius: 16px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 20px 80px;
+    padding: 2.5rem 1.25rem 5rem;
     gap: 20px;
-    margin: 25px;
+    margin: 1.563rem;
 }
 h1.index-title{
     background-color: #E30A13;
-    padding: 20px 80px;
+    padding: 1.25rem 5rem;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 1.563rem;
     margin: auto;
     color: #f4f3f2;
 }
@@ -242,7 +240,7 @@ body .cards-content {
     background-image: url('/resorces/TBOI_Pag/Backgrounds_Pag/Fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 16px;
+    border-radius: 1rem;
     position: relative;
     padding-bottom: 50%;
     transition: all ease 0.5s;
@@ -263,7 +261,7 @@ body .cards-content {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0 10px 10px 10px;
+    padding: 0 0.625rem 0.625rem 0.625rem;
   }
   body .card-content .card-description-content .info-content {
     flex: 2;
@@ -274,10 +272,10 @@ body .cards-content {
   body .card-content .card-description-content .info-content p {
     color: #f4f3f2;
     overflow: hidden;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-overflow: ellipsis;
     display: -webkit-box;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
   }
@@ -292,9 +290,9 @@ section.index-aboutTheGame{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 20px 80px;
+    padding: 2.5rem 1.25rem 5rem;
     gap: 20px;
-    margin: 25px;
+    margin: 1.563rem;
 }
 h1.index-title-aboutTheGame{
     color: #C69C39;
@@ -311,7 +309,7 @@ footer{
 .footerContainer{
     background-color: #C69C39;
     width: 100%;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
 }
 .socialIcons{
     display: flex;
@@ -320,9 +318,9 @@ footer{
 }
 .socialIcons a.icon{
     text-decoration: none;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #1c1b21;
-    margin: 10px;
+    margin: 0.625rem;
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -338,7 +336,7 @@ footer{
     background: none;
 }
 .socialIcons a i{
-    font-size: 80px;
+    font-size: 5rem;
     color: #f4f3f2;
     opacity: 0.9;
 }
@@ -357,7 +355,7 @@ footer{
     transition: 0.5s;
 }
 .footerNav{
-    margin: 30px 0;
+    margin: 1.875rem 0;
 }
 .footerNav ul{
     display: flex;
@@ -365,7 +363,7 @@ footer{
 }
 .footerNav ul li a{
     color: white;
-    margin: 20px;
+    margin: 1.25rem;
     text-decoration: none;
     font-size: 1.3em;
     opacity: 0.7;
@@ -376,7 +374,7 @@ footer{
 }
 .footerBottom{
     background-color: #1c1b21;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 .footerBottom p{
@@ -385,9 +383,9 @@ footer{
 .designer{
     opacity: 0.7;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     font-weight: 400;
-    margin: 0px 5px;
+    margin: 0px 0.313rem;
 }
 /* Footer Effects */
 /* Footer */
