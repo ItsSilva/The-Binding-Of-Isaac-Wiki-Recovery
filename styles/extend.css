@@ -239,6 +239,7 @@ html body .card .card-description .info p {
 }
 html body .card .card-description .life {
   flex: 1;
+  display: flex;
 }
 html body .owl-carousel {
   position: relative;
