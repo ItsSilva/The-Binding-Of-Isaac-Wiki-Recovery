@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../resorces/TBOI_Pag/Characters_PNG/Isaac.png" type="image/webp">
+    <link rel="stylesheet" href="pagItemsCSS.css">
+    <link rel="stylesheet" href="/styles/extend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+
+        <!--Logo-->
+        <div class="hero">
+            <nav id="top">
+                <a class="logo" href="../main/main.html">
+                    <img class="logo-img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
+                </a>
+                <!--Logo-->
+
+                <!-- Searchbar -->
+                <div class="box">
+                    <input type="text" placeholder="Search...">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <!-- Searchbar -->
+
+                <!-- Save Bottom -->
+                <div class="saveBottom">
+                    <input type="button">
+                    <a href="../pagSave/pagSave.html">
+                        <i class="fa-solid fa-bookmark fa-2x" style="color:#1c1b21;"></i>
+                    </a>
+                    <!-- Save Bottom -->
+
+                    <!-- Drop-down Profile -->
+                    <img class="user-pic" onclick="toggleMenu()" src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+                                <h3>User name</h3>
+                            </div>
+                            <hr>
+
+                            <a class="sub-meno-link" href="../profile/profile.html">
+                                <i class="fa-solid fa-user" style="color: #1c1b21;"></i>
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                            <a class="sub-meno-link" href="../profile/profile.html">
+                                <i class="fa-solid fa-gear" style="color: #1c1b21;"></i>
+                                <p>Settings & privacy</p>
+                                <span>></span>
+                            </a>
+                            <a class="sub-meno-link"
+                                href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/">
+                                <i class="fa-brands fa-steam" style="color: #1c1b21;"></i>
+                                <p>Steam Game Store</p>
+                                <span>></span>
+                            </a>
+                            <a class="sub-meno-link" href="../index/index.html">
+                                <i class="fa-solid fa-right-from-bracket" style="color: #1c1b21;"></i>
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <!-- Save Bottom -->
+        <!-- Drop-down Profile -->
+
+    </header>
+
+    <!-- infoCards -->
+    <section class="sizeTextinfoCards">
+        <div class="textinfoCards">
+            <h1>Items</h1>
+        </div>
+
+        <div class="tableContainer">
+            <table id="infoCards">
+                <!-- info -->
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Icon</th>
+                        <th>Quote</th>
+                        <th>Description</th>
+                        <th>Quality</th>
+                        <th>Save</th>
+                    </tr>
+                </thead>
+                <!-- info -->
+
+                <tbody>
+                    <!-- ???'s Only Friend -->
+                    <tr>
+                        <td>
+                            <h2>???'s Only Friend</h2>
+                        </td>
+                        <td>
+                            <p>5.100.320</p>
+                        </td>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Items_PNG/Collectible_Blue_Baby27s_Only_Friend_icon.webp"
+                                alt="">
+                        </td>
+                        <td>
+                            <p>Controlled friend</p>
+                        </td>
+                        <td>
+                            <p>Spawns a controllable familiar that deals 37.5 damage per second on touch. It can be
+                                moved using the shooting directional keys</p>
+                        </td>
+                        <td>
+                            <p>1</p>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- 1. Pitch Black -->
+
+                    <!-- <3 -->
+                    <tr>
+                        <td>
+                            <h2> Less Than Three </h2>
+                        </td>
+                        <td>
+                            <p>5.100.15</p>
+                        </td>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Items_PNG/Collectible_Less_Than_Three_icon.webp" alt="">
+                        </td>
+                        <td>
+                            <p>HP up</p>
+                        </td>
+                        <td>
+                            <p>Grants Isaac one Red Heart container and fully restores Isaac's health.</p>
+                        </td>
+                        <td>
+                            <p>2</p>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- <3 -->
+
+                    <!-- 1up! -->
+                    <tr>
+                        <td>
+                            <h2>1up!</h2>
+                        </td>
+                        <td>
+                            <p>5.100.11</p>
+                        </td>
+                        <td>
+                            <img src="../resorces/TBOI_Pag/Items_PNG/Collectible_1up21_icon.webp" alt="">
+                        </td>
+                        <td>
+                            <p>Extra life</p>
+                        </td>
+                        <td>
+                            <p>Gives Isaac an extra life. Upon death, he will respawn in the previous room with full
+                                health, after which 1up! will disappear.</p>
+                        </td>
+                        <td>
+                            <p>2</p>
+                        </td>
+                        <td>
+                            <a class="savecolor" href="#">
+                                <i class="fa-solid fa-bookmark fa-2x"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- 1up! -->
+
+                                        <!-- 20/20 -->
+                                        <tr>
+                                            <td>
+                                                <h2>20/20</h2>
+                                            </td>
+                                            <td>
+                                                <p>5.100.245</p>
+                                            </td>
+                                            <td>
+                                                <img src="../resorces/TBOI_Pag/Items_PNG/Collectible_20_20_icon.webp" alt="">
+                                            </td>
+                                            <td>
+                                                <p>Double shot</p>
+                                            </td>
+                                            <td>
+                                                <p>Isaac fires two tears at once, one from each eye. (in Repentance) 0.8x damage multiplier.</p>
+                                            </td>
+                                            <td>
+                                                <p>4</p>
+                                            </td>
+                                            <td>
+                                                <a class="savecolor" href="#">
+                                                    <i class="fa-solid fa-bookmark fa-2x"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- 20/20 -->
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- infoCards -->
+
+</body>
+<footer>
+    <div class="footerContainer">
+        <a class="logo" href="../main/main.html">
+            <img class="logo-img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
+        </a>
+        <div class="socialIcons">
+            <a class="icon" href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a class="icon" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="icon" href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+            <a class="icon" href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">ItsSilva & Makurezzz</span> </p>
+    </div>
+
+    <script src="pagItemsJS.js"></script>
+</footer>
+
+</html>
