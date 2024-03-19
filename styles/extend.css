@@ -10,10 +10,10 @@
 }
 .primary-button {
   background-color: #1C1B21;
-  border: 1px solid #C69C39;
-  border-radius: 50px;
+  border: 0.063rem solid #C69C39;
+  border-radius: 3.125rem;
   color: #f4f3f2;
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem;
   text-decoration: none;
   box-shadow: 0px -8px 7px -1px #0C0C0C;
   transition: all ease 0.5s;
@@ -26,9 +26,9 @@
 .secondary-button {
   background-color: #851419;
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   color: #f4f3f2;
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem;
   text-decoration: none;
   box-shadow: 0px -8px 7px -1px #0C0C0C;
   transition: all ease 0.5s;
@@ -51,23 +51,23 @@ html body .title {
   text-align: center;
 }
 html body .title h1 {
-  font-size: 150px;
+  font-size: 9.375rem;
   color: #f4f3f2;
 }
 html body .title span {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #f4f3f2;
   text-align: center;
 }
 html body .show-password-container {
-  border-bottom: 1px solid #f4f3f2;
+  border-bottom: 0.063rem solid #f4f3f2;
   display: flex;
 }
 html body .show-password-container input.passwordInput {
   all: unset;
   width: 100%;
   color: #f4f3f2;
-  padding: 10px 0 10px 29px;
+  padding: 0.625rem 0 0.625rem 1.813rem;
 }
 html body .show-password-container input.toggleVisibility {
   all: unset;
@@ -86,7 +86,7 @@ html body .welcome-page {
   text-align: center;
 }
 html body .welcome-page .primary-button {
-  font-size: 48px;
+  font-size: 3rem;
 }
 html body .welcome-page img {
   display: block;
@@ -119,18 +119,18 @@ html body .step-action {
   margin: 0 auto;
 }
 html body .step-action .input {
-  border-bottom: 1px solid #f4f3f2;
+  border-bottom: 0.063rem solid #f4f3f2;
   display: flex;
 }
 html body .step-action .input input {
   all: unset;
   width: 100%;
   color: #f4f3f2;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 html body .step-action button:not(.primary-button) {
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   color: #f4f3f2;
   cursor: pointer;
   background: none;
@@ -171,7 +171,7 @@ html body .login-container .step-action {
 }
 html body .login-container .step-action .input {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 html body .login-container .step-action .input label {
   position: absolute;
@@ -200,7 +200,7 @@ html body .card {
   background-image: url('/resorces/TBOI_Pag/Backgrounds_Pag/Fondo.png');
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 16px;
+  border-radius: 1rem;
   position: relative;
   padding-bottom: 50%;
   transition: all ease 0.5s;
@@ -222,7 +222,7 @@ html body .card .card-description {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 20px;
+  padding: 1.25rem;
 }
 html body .card .card-description .info {
   flex: 2;
@@ -263,13 +263,13 @@ html body .owl-carousel .owl-nav button {
   position: absolute;
   top: calc(50% - 10px);
   background-color: #C69C39 !important;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 html body .owl-carousel .owl-nav button.owl-prev {
-  padding: 10px !important;
+  padding: 0.625rem !important;
   left: 10px;
 }
 html body .owl-carousel .owl-nav button.owl-next {
   right: 10px;
-  padding: 10px !important;
+  padding: 0.625rem !important;
 }
