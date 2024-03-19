@@ -88,7 +88,7 @@ header .hero__img{
 .sub-menu-wrap.open-menu{
     max-height: 400px;
 }
-.sub-menu{
+.sub-menu-wrap__sub-menu{
     background-color: #f4f3f2;
     padding: 1.25rem;
     margin: 0.625rem;
