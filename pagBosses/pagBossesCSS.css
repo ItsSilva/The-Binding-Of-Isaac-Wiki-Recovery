@@ -11,18 +11,19 @@ body{
 header .hero{
     width: 100%;
 }
-header nav#top{
+header nav#hero__top{
     background-color: #C69C39;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-header .logo-img{
+header .hero__img{
     height: 80px;
     width: auto;
     margin: 0.625rem;
 }
 /*Logo*/
+
 /* search bar */
 .box{
     height: 30px;
@@ -49,6 +50,7 @@ header .logo-img{
     font-size: 1.125rem;
 }
 /* search bar */
+
 /* Save Bottom */
 .saveBottom{
     height: 30px;
@@ -86,19 +88,19 @@ header .logo-img{
 .sub-menu-wrap.open-menu{
     max-height: 400px;
 }
-.sub-menu{
+.sub-menu-wrap__sub-menu{
     background-color: #f4f3f2;
     padding: 1.25rem;
     margin: 0.625rem;
 }
-div.user-info{
+div.sub-menu-wrap__sub-menu__user-info{
     display: flex;
     align-items: center;
 }
-div.user-info h3{
+div.sub-menu-wrap__sub-menu__user-info h3{
     font-weight: 500;
 }
-div.user-info img{
+div.sub-menu-wrap__sub-menu__user-info img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -111,17 +113,17 @@ div.user-info img{
     background: #1c1b21;
     margin: 0.938rem 0 0.625rem;
 }
-.sub-meno-link{
+.sub-menu-wrap__sub-meno-link{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #1c1b21;
     margin: 0.75rem 0;
 }
-.sub-meno-link p{
+.sub-menu-wrap__sub-meno-link p{
     width: 100%;
 }
-a.sub-meno-link i{
+a.sub-menu-wrap__sub-meno-link i{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,15 +133,15 @@ a.sub-meno-link i{
     padding: 0.5rem;
     margin-right: 0.938rem;
 }
-.sub-meno-link span{
+.sub-menu-wrap__sub-meno-link span{
     font-size: 0.938rem;
     transition: transform 0.5s;
 }
-.sub-meno-link:hover span{
+.sub-menu-wrap__sub-meno-link:hover span{
     transform: translateX(5px);
     font-weight: 600;
 }
-.sub-meno-link:hover p{
+.sub-menu-wrap__sub-meno-link:hover p{
     font-weight: 600;
 }
 /* Drop-down Profile */
@@ -198,7 +200,7 @@ section.sizeTextinfoCards{
     flex-direction: column;
     justify-content: center;
 }
-div.textinfoCards{
+div.sizeTextinfoCards__textinfoCards{
     background-color: #313131;
     border-radius: 1.563rem;
     text-align: center;
@@ -206,7 +208,7 @@ div.textinfoCards{
     margin: 1.563rem auto;
     width: 800px;
 }
-div.textinfoCards h1{
+div.sizeTextinfoCards__textinfoCards h1{
     color: #C69C39;
     text-align: center;
 }
@@ -239,52 +241,58 @@ div.tableContainer::-webkit-scrollbar-thumb
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #C69C39;
 }
-#infoCards{
+#tableContainer__infoCards{
     border-collapse:separate;
     border-spacing:0 0.938rem;
 }
-#infoCards thead{
+#tableContainer__infoCards thead{
     border: 0;
     position: sticky;
     top: 0;
 }
-#infoCards thead tr th{
+#tableContainer__infoCards thead tr th{
     color: #f4f3f2;
     background-color: #E30A13;
     padding: 0.938rem;
 }
-#infoCards thead tr > :first-child, #infoCards tbody tr > :first-child{
+#tableContainer__infoCards thead tr > :first-child, #infoCards tbody tr > :first-child{
     border-radius: 1.563rem 0 0 1.563rem;
 }
-#infoCards thead tr > :last-child, #infoCards tbody tr > :last-child{
+#tableContainer__infoCards thead tr > :last-child, #infoCards tbody tr > :last-child{
     border-radius: 0 1.563rem 1.563rem 0;
 }
-#infoCards tbody tr td img{
+#tableContainer__infoCards tbody tr td img{
     max-width: 60px;
     margin: 1.563rem auto;
 }
-#infoCards tbody tr td ul li{
-    margin: 0.5rem;
+#tableContainer__infoCards tbody tr td p{
+    text-align: left;
+    margin: 0.65rem;
+}
+#tableContainer__infoCards tbody tr td ul{
+    text-align: left;
+    margin-bottom: 0.65rem;
 }
 
 /* savecolor */
-.savecolor i{
+.tableContainer__infoCards--savecolor i{
     color: #696969;
 }
-.savecolor.active i{
+.tableContainer__infoCards--savecolor.active i{
     color: #C69C39;
 }
 /* savecolor */
 
 /* <!-- info --> */
-#infoCards tbody tr{
+#tableContainer__infoCards tbody tr{
     background-image: url(../resorces/TBOI_Pag/Backgrounds_Pag/infofondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-#infoCards tbody tr td{
+#tableContainer__infoCards tbody tr td{
     color: #f4f3f2;
+    text-align: center;
     min-width: 100px;
     padding: 0.938rem 0.625rem;
 }
@@ -302,12 +310,12 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-.socialIcons{
+.footerContainer__socialIcons{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.socialIcons a.icon{
+.footerContainer__socialIcons a.footerContainer__socialIcons--icon{
     text-decoration: none;
     padding: 0.625rem;
     background-color: #1c1b21;
@@ -319,29 +327,29 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.socialIcons a.icon:hover{
+.footerContainer__socialIcons a.footerContainer__socialIcons--icon:hover{
     background-color: #f4f3f2;
     transition: 0.5s;
 }
-.socialIcons a.logo{
+.footerContainer__socialIcons a.footerContainer__logo{
     background: none;
 }
-.socialIcons a i{
+.footerContainer__socialIcons a i{
     font-size: 1.563rem;
     color: #f4f3f2;
     opacity: 0.9;
 }
-.socialIcons a i:hover::before{
+.footerContainer__socialIcons a i:hover::before{
     color: #1c1b21;
     transition: 0.5s;
     border-radius: 50%;
 }
 /* Footer Effects */
-.socialIcons a:hover{
+.footerContainer__socialIcons a:hover{
     background-color: #f4f3f2;
     transition: 0.5s;
 }
-.socialIcons a:hover i{
+.footerContainer__socialIcons a:hover i{
     color: white;
     transition: 0.5s;
 }
@@ -371,14 +379,14 @@ footer{
 .footerBottom p{
     color: white;
 }
-.designer{
+.footerBottom__designer{
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 0.063rem;
     font-weight: 400;
     margin: 0 0.313rem;
 }
-img.logo-img{
+img.footerContainer__logo--img{
     height: 50px;
 }
 /* Footer Effects */

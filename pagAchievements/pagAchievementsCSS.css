@@ -15,7 +15,7 @@ header nav#hero__top{
     background-color: #C69C39;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 header .hero__img{
     height: 80px;
