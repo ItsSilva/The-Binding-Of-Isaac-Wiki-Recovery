@@ -236,7 +236,7 @@ body .cards-content {
     justify-content: center;
     gap: 20px;
   }
-  body .card-content {
+  body .cards-content__card-content {
     background-image: url('/resorces/TBOI_Pag/Backgrounds_Pag/Fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,15 +245,15 @@ body .cards-content {
     padding-bottom: 50%;
     transition: all ease 0.5s;
   }
-  body .card-content:hover {
+  body .cards-content__card-content:hover {
     transform: scale(1.04);
   }
-  body .card-content .card-image-content img{
+  body .cards-content__card-content .cards-content__card-content--card-image-content img{
     width: 65%;
     margin: auto;
     display: block;
   }
-  body .card-content .card-description-content {
+  body .cards-content__card-content .card-description-content {
     display: flex;
     text-align: center;
     background-color: rgba(12, 12, 12, 0.5);
@@ -263,13 +263,13 @@ body .cards-content {
     bottom: 0;
     padding: 0 0.625rem 0.625rem 0.625rem;
   }
-  body .card-content .card-description-content .info-content {
+  body .cards-content__card-content .card-description-content .info-content {
     flex: 2;
   }
-  body .card-content .card-description-content .info-content .card-name-content {
+  body .cards-content__card-content .card-description-content .info-content .card-name-content {
     color: #f4f3f2;
   }
-  body .card-content .card-description-content .info-content p {
+  body .cards-content__card-content .card-description-content .info-content p {
     color: #f4f3f2;
     overflow: hidden;
     font-size: 0.75rem;
