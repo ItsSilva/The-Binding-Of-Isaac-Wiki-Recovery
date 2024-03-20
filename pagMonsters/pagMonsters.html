@@ -21,9 +21,9 @@
 
         <!--Logo-->
         <div class="hero">
-            <nav id="top">
-                <a class="logo" href="../main/main.html">
-                    <img class="logo-img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
+            <nav id="hero__top">
+                <a href="../main/main.html">
+                    <img class="hero__img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
                 </a>
                 <!--Logo-->
 
@@ -42,43 +42,44 @@
                     <a href="../pagSave/pagSave.html">
                         <i class="fa-solid fa-bookmark fa-2x" style="color:#1c1b21;"></i>
                     </a>
-                    <!-- Save Bottom -->
+                </div>
+                <!-- Save Bottom -->
 
-                    <!-- Drop-down Profile -->
-                    <img class="user-pic" onclick="toggleMenu()" src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+                <!-- Drop-down Profile -->
+                <img class="user-pic" onclick="toggleMenu()" src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
 
-                    <div class="sub-menu-wrap" id="subMenu">
-                        <div class="sub-menu">
-                            <div class="user-info">
-                                <img src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
-                                <h3>User name</h3>
-                            </div>
-                            <hr>
-
-                            <a class="sub-meno-link" href="../profile/profile.html">
-                                <i class="fa-solid fa-user" style="color: #1c1b21;"></i>
-                                <p>Edit Profile</p>
-                                <span>></span>
-                            </a>
-                            <a class="sub-meno-link" href="../profile/profile.html">
-                                <i class="fa-solid fa-gear" style="color: #1c1b21;"></i>
-                                <p>Settings & privacy</p>
-                                <span>></span>
-                            </a>
-                            <a class="sub-meno-link"
-                                href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/">
-                                <i class="fa-brands fa-steam" style="color: #1c1b21;"></i>
-                                <p>Steam Game Store</p>
-                                <span>></span>
-                            </a>
-                            <a class="sub-meno-link" href="../index/index.html">
-                                <i class="fa-solid fa-right-from-bracket" style="color: #1c1b21;"></i>
-                                <p>Logout</p>
-                                <span>></span>
-                            </a>
-
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu-wrap__sub-menu">
+                        <div class="sub-menu-wrap__sub-menu__user-info">
+                            <img src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+                            <h3>User name</h3>
                         </div>
+                        <hr>
+
+                        <a class="sub-menu-wrap__sub-meno-link" href="../profile/profile.html">
+                            <i class="fa-solid fa-user" style="color: #1c1b21;"></i>
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a class="sub-menu-wrap__sub-meno-link" href="../profile/profile.html">
+                            <i class="fa-solid fa-gear" style="color: #1c1b21;"></i>
+                            <p>Settings & privacy</p>
+                            <span>></span>
+                        </a>
+                        <a class="sub-menu-wrap__sub-meno-link"
+                            href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/">
+                            <i class="fa-brands fa-steam" style="color: #1c1b21;"></i>
+                            <p>Steam Game Store</p>
+                            <span>></span>
+                        </a>
+                        <a class="sub-menu-wrap__sub-meno-link" href="../index/index.html">
+                            <i class="fa-solid fa-right-from-bracket" style="color: #1c1b21;"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+
                     </div>
+                </div>
             </nav>
         </div>
         <!-- Save Bottom -->
@@ -88,12 +89,12 @@
 
     <!-- infoCards -->
     <section class="sizeTextinfoCards">
-        <div class="textinfoCards">
+        <div class="sizeTextinfoCards__textinfoCards">
             <h1>Monsters</h1>
         </div>
 
         <div class="tableContainer">
-            <table id="infoCards">
+            <table id="tableContainer__infoCards">
                 <!-- info -->
                 <thead>
                     <tr>
@@ -123,13 +124,12 @@
                                 death.</p>
                         </td>
                         <td>
-                            <a class="savecolor" href="#">
+                            <a class="tableContainer__infoCards--savecolor" href="#">
                                 <i class="fa-solid fa-bookmark fa-2x"></i>
                             </a>
                         </td>
                     </tr>
                     <!-- Gasper -->
-
                     <!-- Gurgle -->
                     <tr>
                         <td>
@@ -139,21 +139,24 @@
                             <h2>Gurgle</h2>
                         </td>
                         <td>
-                            <p>87.0</p>
+                            <p>
+                                87.0
+                            </p>
                         </td>
                         <td>
-                            <p>Walks towards Isaac, dealing contact damage and periodically firing Ipecac shots at him;
+                            <p>
+                                Walks towards Isaac, dealing contact damage and periodically firing Ipecac shots at him;
                                 they are immune to this explosion, but other enemies are not. Can turn into a Splasher
-                                upon death.</p>
+                                upon death.
+                            </p>
                         </td>
                         <td>
-                            <a class="savecolor" href="#">
+                            <a class="tableContainer__infoCards--savecolor" href="#">
                                 <i class="fa-solid fa-bookmark fa-2x"></i>
                             </a>
                         </td>
                     </tr>
                     <!-- Gurgle -->
-
                     <!-- Nulls -->
                     <tr>
                         <td>
@@ -163,20 +166,23 @@
                             <h2>Nulls</h2>
                         </td>
                         <td>
-                            <p>252.0</p>
+                            <p>
+                                252.0
+                            </p>
                         </td>
                         <td>
-                            <p>Walks towards Isaac, dealing contact damage. Upon getting near Isaac, it will open its
-                                eyes, though its speed doesn't change. Fades into and out of visibility.</p>
+                            <p>
+                                Walks towards Isaac, dealing contact damage. Upon getting near Isaac, it will open its
+                                eyes, though its speed doesn't change. Fades into and out of visibility.
+                            </p>
                         </td>
                         <td>
-                            <a class="savecolor" href="#">
+                            <a class="tableContainer__infoCards--savecolor" href="#">
                                 <i class="fa-solid fa-bookmark fa-2x"></i>
                             </a>
                         </td>
                     </tr>
                     <!-- Nulls -->
-
                     <!-- Blue Gaper -->
                     <tr>
                         <td>
@@ -186,20 +192,22 @@
                             <h2>Blue Gaper</h2>
                         </td>
                         <td>
-                            <p>297.0</p>
+                            <p>
+                                297.0
+                            </p>
                         </td>
                         <td>
-                            <p>Walks towards Isaac, dealing contact damage.</p>
+                            <p>
+                                Walks towards Isaac, dealing contact damage.
+                            </p>
                         </td>
                         <td>
-                            <a class="savecolor" href="#">
+                            <a class="tableContainer__infoCards--savecolor" href="#">
                                 <i class="fa-solid fa-bookmark fa-2x"></i>
                             </a>
                         </td>
                     </tr>
                     <!-- Blue Gaper -->
-
-
                 </tbody>
             </table>
         </div>
@@ -209,18 +217,23 @@
 </body>
 <footer>
     <div class="footerContainer">
-        <a class="logo" href="../main/main.html">
-            <img class="logo-img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp" alt="/Wrath_lamb">
+        <a class="footerContainer__logo" href="../main/main.html">
+            <img class="footerContainer__logo--img" src="../resorces/TBOI_Pag/Backgrounds_Pag/Wrath_lamb.webp"
+                alt="/Wrath_lamb">
         </a>
-        <div class="socialIcons">
-            <a class="icon" href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a class="icon" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a class="icon" href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-            <a class="icon" href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+        <div class="footerContainer__socialIcons">
+            <a class="footerContainer__socialIcons--icon" href="https://www.facebook.com"><i
+                    class="fa-brands fa-facebook fa-2x"></i></a>
+            <a class="footerContainer__socialIcons--icon" href="https://www.instagram.com"><i
+                    class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="footerContainer__socialIcons--icon" href="https://twitter.com/?lang=es"><i
+                    class="fa-brands fa-x-twitter fa-2x"></i></a>
+            <a class="footerContainer__socialIcons--icon" href="https://www.tiktok.com"><i
+                    class="fa-brands fa-tiktok fa-2x"></i></a>
         </div>
     </div>
     <div class="footerBottom">
-        <p>Copyright &copy;2024; Designed by <span class="designer">ItsSilva & Makurezzz</span> </p>
+        <p>Copyright &copy;2024; Designed by <span class="footerBottom__designer">ItsSilva & Makurezzz</span> </p>
     </div>
 
     <script src="pagMonstersJS.js"></script>
