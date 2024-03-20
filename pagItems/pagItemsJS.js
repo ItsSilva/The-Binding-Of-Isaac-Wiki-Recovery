@@ -7,7 +7,7 @@ function toggleMenu(){
 // Drop-down Profile
 
 // savecolor
-let saveColors = document.querySelectorAll(".savecolor");
+let saveColors = document.querySelectorAll(".tableContainer__infoCards--savecolor");
 
 function toggleClass(element, text) {
   element.classList.toggle(text);
