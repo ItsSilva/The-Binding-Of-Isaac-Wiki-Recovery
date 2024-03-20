@@ -121,7 +121,7 @@ gap: 35px;
 /* secondary-button */
 
 /* index-content */
-section.index-content{
+section#index-content{
     background-color: #313131;
     border-radius: 1rem;
     display: flex;
@@ -131,11 +131,11 @@ section.index-content{
     padding: 1.25rem;
     margin: 1.563rem;
 }
-section.index-content h3{
+section#index-content h3{
     color: #f4f3f2;
     text-align: center;
 }
-section.index-content h3 a{
+section#index-content h3 a{
     color: #E30A13;
 }
 h1.index-title{
@@ -149,7 +149,7 @@ h1.index-title{
 /* index-content */
 
 /* About Us */
-.index-aboutus{
+#index-aboutus{
     background-color: #313131;
     border-radius: 1rem;
     display: flex;

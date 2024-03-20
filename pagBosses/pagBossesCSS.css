@@ -264,7 +264,7 @@ div.tableContainer::-webkit-scrollbar-thumb
     margin: 1.563rem auto;
 }
 #infoCards tbody tr td ul li{
-    list-style: none;
+    margin: 0.5rem;
 }
 
 /* savecolor */
@@ -285,7 +285,6 @@ div.tableContainer::-webkit-scrollbar-thumb
 }
 #infoCards tbody tr td{
     color: #f4f3f2;
-    text-align: center;
     min-width: 100px;
     padding: 0.938rem 0.625rem;
 }
