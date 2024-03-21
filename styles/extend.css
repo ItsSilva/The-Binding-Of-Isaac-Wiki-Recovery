@@ -118,11 +118,11 @@ html body .step-action {
   max-width: 700px;
   margin: 0 auto;
 }
-html body .step-action .input {
+html body .step-action .hero__input {
   border-bottom: 0.063rem solid #f4f3f2;
   display: flex;
 }
-html body .step-action .input input {
+html body .step-action .hero__input input {
   all: unset;
   width: 100%;
   color: #f4f3f2;
@@ -169,11 +169,11 @@ html body .login-container .step-action {
   flex-direction: column;
   gap: 30px;
 }
-html body .login-container .step-action .input {
+html body .login-container .step-action .hero__input {
   position: relative;
   margin-bottom: 1.875rem;
 }
-html body .login-container .step-action .input label {
+html body .login-container .step-action .hero__input label {
   position: absolute;
   left: 0;
   right: 0;
