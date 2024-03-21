@@ -183,12 +183,12 @@ html body .login-container .hero__settings__step-action .hero__input label {
 html body .login-container h2 {
   color: #f4f3f2;
 }
-html body .login-container .bottom-container {
+html body .login-container .hero__primary-button__bottom-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-html body .login-container .bottom-container .finish-image-container .finish-image-container__finish-image {
+html body .login-container .hero__primary-button__bottom-container .finish-image-container .finish-image-container__finish-image {
   width: 100px;
 }
 html body .cards {
