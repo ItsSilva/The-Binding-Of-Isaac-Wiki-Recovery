@@ -63,13 +63,13 @@ html body .hero__show-password-container {
   border-bottom: 0.063rem solid #f4f3f2;
   display: flex;
 }
-html body .hero__show-password-container input.passwordInput {
+html body .hero__show-password-container input.hero__passwordInput {
   all: unset;
   width: 100%;
   color: #f4f3f2;
   padding: 0.625rem 0 0.625rem 1.813rem;
 }
-html body .hero__show-password-container input.toggleVisibility {
+html body .hero__show-password-container input.hero__toggleVisibility {
   all: unset;
   background-image: url("../resorces/TBOI_Pag/Items_PNG/Collectible_Eye_of_the_Occult_icon.webp");
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ html body .register-container .register-step .finish-image-container {
   width: 200px;
   height: 200px;
 }
-html body .register-container .register-step .finish-image-container img.finish-image {
+html body .register-container .register-step .finish-image-container img.finish-image-container__finish-image {
   position: absolute;
   width: 200px;
   top: 0;
@@ -188,7 +188,7 @@ html body .login-container .bottom-container {
   flex-direction: column;
   gap: 10px;
 }
-html body .login-container .bottom-container .finish-image-container .finish-image {
+html body .login-container .bottom-container .finish-image-container .finish-image-container__finish-image {
   width: 100px;
 }
 html body .cards {

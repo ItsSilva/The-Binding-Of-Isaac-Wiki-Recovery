@@ -29,8 +29,8 @@ const passwordContainers = document.querySelectorAll('.hero__show-password-conta
 // Itera sobre cada contenedor
 passwordContainers.forEach(container => {
     // Encuentra el input de contraseña y el checkbox dentro del contenedor actual
-    const passwordInput = container.querySelector('.passwordInput');
-    const toggleVisibility = container.querySelector('.toggleVisibility');
+    const passwordInput = container.querySelector('.hero__passwordInput');
+    const toggleVisibility = container.querySelector('.hero__toggleVisibility');
 
     // Agrega un event listener a cada checkbox
     toggleVisibility.addEventListener("change", function() {
