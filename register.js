@@ -1,7 +1,7 @@
 // Seleccionar todos los pasos del registro
 const registerSteps = document.querySelectorAll('.register-step');
 // Seleccionar los botones de "Next"
-const nextButtons = document.querySelectorAll('.step-action button.next');
+const nextButtons = document.querySelectorAll('.hero__settings__step-action button.next');
 
 // Función para avanzar al siguiente paso
 function goToNextStep() {

@@ -113,22 +113,22 @@ html body .register-container .register-step .finish-image-container img.finish-
   top: 0;
   left: -30px;
 }
-html body .step-action {
+html body .hero__settings__step-action {
   width: 90%;
   max-width: 700px;
   margin: 0 auto;
 }
-html body .step-action .hero__input {
+html body .hero__settings__step-action .hero__input {
   border-bottom: 0.063rem solid #f4f3f2;
   display: flex;
 }
-html body .step-action .hero__input input {
+html body .hero__settings__step-action .hero__input input {
   all: unset;
   width: 100%;
   color: #f4f3f2;
   padding: 0.625rem 0;
 }
-html body .step-action button:not(.hero__primary-button) {
+html body .hero__settings__step-action button:not(.hero__primary-button) {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: #f4f3f2;
@@ -164,16 +164,16 @@ html body .login-container {
   gap: 20px;
   text-align: center;
 }
-html body .login-container .step-action {
+html body .login-container .hero__settings__step-action {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-html body .login-container .step-action .hero__input {
+html body .login-container .hero__settings__step-action .hero__input {
   position: relative;
   margin-bottom: 1.875rem;
 }
-html body .login-container .step-action .hero__input label {
+html body .login-container .hero__settings__step-action .hero__input label {
   position: absolute;
   left: 0;
   right: 0;
