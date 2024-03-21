@@ -59,17 +59,17 @@ html body .hero__title span {
   color: #f4f3f2;
   text-align: center;
 }
-html body .show-password-container {
+html body .hero__show-password-container {
   border-bottom: 0.063rem solid #f4f3f2;
   display: flex;
 }
-html body .show-password-container input.passwordInput {
+html body .hero__show-password-container input.passwordInput {
   all: unset;
   width: 100%;
   color: #f4f3f2;
   padding: 0.625rem 0 0.625rem 1.813rem;
 }
-html body .show-password-container input.toggleVisibility {
+html body .hero__show-password-container input.toggleVisibility {
   all: unset;
   background-image: url("../resorces/TBOI_Pag/Items_PNG/Collectible_Eye_of_the_Occult_icon.webp");
   background-repeat: no-repeat;

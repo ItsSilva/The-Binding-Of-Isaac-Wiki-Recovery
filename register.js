@@ -24,7 +24,7 @@ nextButtons.forEach(button => {
 
 
 // Selecciona todos los contenedores de contraseña
-const passwordContainers = document.querySelectorAll('.show-password-container');
+const passwordContainers = document.querySelectorAll('.hero__show-password-container');
 
 // Itera sobre cada contenedor
 passwordContainers.forEach(container => {
