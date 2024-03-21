@@ -45,7 +45,7 @@ header nav#hero__top ul li a:hover{
 header ul{
     font-size: 2rem;
 }
-header .primary-button {
+header .hero__primary-button {
     font-size: 2rem;
     padding: 1.25rem 5.625rem;
 }
