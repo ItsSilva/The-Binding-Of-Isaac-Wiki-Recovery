@@ -12,33 +12,33 @@ body{
 header .hero{
     width: 100%;
 }
-header nav#top{
+header nav#hero__top{
     background-color: #C69C39;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.688rem 2.125rem;
 }
-header .logo{
+header .hero__top__logo{
     color: white;
     font-size: 1.75rem;
 }
-header .logo-img{
+header .hero__top__logo__logo-img{
     height: 100px;
     width: auto;
 }
-header nav#top ul li{
+header nav#hero__top ul li{
     list-style-type: none;
     display: inline-block;
     padding: 0.625rem 1.25rem;
     color: #313131;
 }
-header nav#top ul li a{
+header nav#hero__top ul li a{
     color: #f4f3f2;
     text-decoration: none;
     font-weight: bold;
 }
-header nav#top ul li a:hover{
+header nav#hero__top ul li a:hover{
     color: #313131;
     transform: .3s;
 }
@@ -219,7 +219,7 @@ footer{
     background-color: #f4f3f2;
     transition: 0.5s;
 }
-.socialIcons a.logo{
+.socialIcons a.hero__top__logo{
     background: none;
 }
 .socialIcons a i{
