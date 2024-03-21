@@ -92,10 +92,10 @@ img.displaySlide{
     flex-direction: column;
     gap: 20px;
 }
-.title-text{
+.text__title-text{
     color: #C69C39;
 }
-.paragraph{
+.text__paragraph{
     color: #f4f3f2;
 }
 /* text */
@@ -109,11 +109,11 @@ margin: 1.875rem auto;
 justify-content: center;
 gap: 35px;
 }
-.box-sb .secondary-button{
+.box-sb .box-sb__secondary-button{
     font-size: 2rem;
     padding: 20px 200px;
 }
-.sb-img{
+.box-sb__secondary-button__sb-img{
     height: 100px;
     width: auto;
     border-radius: 25%;
