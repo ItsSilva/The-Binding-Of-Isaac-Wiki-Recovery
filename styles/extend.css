@@ -47,14 +47,14 @@ html body .register-step {
 html body .register-step.active {
   display: flex !important;
 }
-html body .title {
+html body .hero__title {
   text-align: center;
 }
-html body .title h1 {
+html body .hero__title h1 {
   font-size: 9.375rem;
   color: #f4f3f2;
 }
-html body .title span {
+html body .hero__title span {
   font-size: 2.5rem;
   color: #f4f3f2;
   text-align: center;
