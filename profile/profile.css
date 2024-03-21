@@ -260,12 +260,12 @@ footer {
   width: 100%;
   padding: 1.25rem 1.875rem;
 }
-.socialIcons {
+.footerContainer__socialIcons {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.socialIcons a.icon {
+.footerContainer__socialIcons a.footerContainer__socialIcons__icon {
   text-decoration: none;
   padding: 0.625rem;
   background-color: #1c1b21;
@@ -277,29 +277,29 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.socialIcons a.icon:hover {
+.footerContainer__socialIcons a.footerContainer__socialIcons__icon:hover {
   background-color: #f4f3f2;
   transition: 0.5s;
 }
-.socialIcons a.hero__top__logo {
+.footerContainer__socialIcons a.hero__top__logo {
   background: none;
 }
-.socialIcons a i {
+.footerContainer__socialIcons a i {
   font-size: 5rem;
   color: #f4f3f2;
   opacity: 0.9;
 }
-.socialIcons a i:hover::before {
+.footerContainer__socialIcons a i:hover::before {
   color: #1c1b21;
   transition: 0.5s;
   border-radius: 50%;
 }
 /* Footer Effects */
-.socialIcons a:hover {
+.footerContainer__socialIcons a:hover {
   background-color: #f4f3f2;
   transition: 0.5s;
 }
-.socialIcons a:hover i {
+.footerContainer__socialIcons a:hover i {
   color: white;
   transition: 0.5s;
 }
@@ -321,15 +321,15 @@ footer {
 .footerNav ul li a:hover {
   opacity: 1;
 }
-.footerBottom {
+.footerContainer__footerBottom {
   background-color: #1c1b21;
   padding: 1.25rem;
   text-align: center;
 }
-.footerBottom p {
+.footerContainer__footerBottom p {
   color: white;
 }
-.designer {
+.footerBottom__designer {
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 0.063rem;
