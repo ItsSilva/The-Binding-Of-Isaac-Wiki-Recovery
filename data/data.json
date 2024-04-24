@@ -336,7 +336,34 @@
         },
         {
             "pagMonsters":[ 
-                
+                {
+                    "id": 1,
+                    "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Gaper.webp",
+                    "name": "Gasper",
+                    "idEntity": "10.1",
+                    "description": "Walks towards Isaac, dealing contact damage. Usually turns into a Pacer or Gusher upon death."
+                },
+                {
+                    "id": 2,
+                    "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Gurgle.webp",
+                    "name": "Gurgle",
+                    "idEntity": "87.0",
+                    "description": "Walks towards Isaac, dealing contact damage and periodically firing Ipecac shots at him; they are immune to this explosion, but other enemies are not. Can turn into a Splasher upon death."
+                },
+                {
+                    "id": 3,
+                    "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Nulls.webp",
+                    "name": "Nulls",
+                    "idEntity": "252.0",
+                    "description": "Walks towards Isaac, dealing contact damage. Upon getting near Isaac, it will open its eyes, though its speed doesn't change. Fades into and out of visibility."
+                },
+                {
+                    "id": 4,
+                    "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Blue_Gaper.webp",
+                    "name": "Blue Gaper",
+                    "idEntity": "297.0",
+                    "description": "Walks towards Isaac, dealing contact damage."
+                }
             ]
         }
     ]
