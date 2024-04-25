@@ -1,3 +1,5 @@
+const render = async () => {
+
 // Drop-down Profile
 let subMenu = document.getElementById("subMenu");
 
@@ -26,3 +28,5 @@ $('.owl-carousel.main').owlCarousel({
         }
     }
 })
+};
+document.addEventListener("DOMContentLoaded", render);
