@@ -29,13 +29,13 @@ export class PageAchievements {
 
   render() {
     // Contenedor de tabla
-    const tableContainer = document.createElement("div");
-    tableContainer.classList.add("tableContainer");
+    // const tableContainer = document.createElement("div");
+    // tableContainer.classList.add("tableContainer");
 
     // Creación de tabla
     const tableContainer__infoCards = document.createElement("table");
     tableContainer__infoCards.classList.add("tableContainer__infoCards");
-    tableContainer.appendChild(tableContainer__infoCards);
+    // tableContainer.appendChild(tableContainer__infoCards);
 
     // Creación de thead
     const thead = document.createElement("thead");
@@ -113,6 +113,6 @@ export class PageAchievements {
     tr2.appendChild(td5);
     tr2.appendChild(td6);
 
-    return tableContainer;
+    return tableContainer__infoCards;
   }
 }

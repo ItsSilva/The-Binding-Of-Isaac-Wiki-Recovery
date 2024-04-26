@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Achievements_PNG/Achievement_Cain_icon.webp",
+            "image": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Achievements_PNG/Achievement_Cain_icon.webp",
             "name": "Cain",
             "description": "Unlocked a new character",
             "unlock": "Hold 55 Coins at one time",

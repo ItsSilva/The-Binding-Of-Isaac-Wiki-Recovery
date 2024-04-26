@@ -241,31 +241,31 @@ div.tableContainer::-webkit-scrollbar-thumb
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #C69C39;
 }
-#tableContainer__infoCards{
+.tableContainer__infoCards{
     border-collapse:separate;
     border-spacing:0 0.938rem;
 }
-#tableContainer__infoCards thead{
+.tableContainer__infoCards thead{
     border: 0;
     position: sticky;
     top: 0;
 }
-#tableContainer__infoCards thead tr th{
+.tableContainer__infoCards thead tr th{
     color: #f4f3f2;
     background-color: #E30A13;
     padding: 0.938rem;
 }
-#tableContainer__infoCards thead tr > :first-child, #infoCards tbody tr > :first-child{
+.tableContainer__infoCards thead tr > :first-child, #infoCards tbody tr > :first-child{
     border-radius: 1.563rem 0 0 1.563rem;
 }
-#tableContainer__infoCards thead tr > :last-child, #infoCards tbody tr > :last-child{
+.tableContainer__infoCards thead tr > :last-child, #infoCards tbody tr > :last-child{
     border-radius: 0 1.563rem 1.563rem 0;
 }
-#tableContainer__infoCards tbody tr td img{
+.tableContainer__infoCards tbody tr td img{
     max-width: 60px;
     margin: 1.563rem auto;
 }
-#tableContainer__infoCards tbody tr td ul li{
+.tableContainer__infoCards tbody tr td ul li{
     list-style: none;
 }
 
@@ -279,13 +279,13 @@ div.tableContainer::-webkit-scrollbar-thumb
 /* savecolor */
 
 /* <!-- info --> */
-#tableContainer__infoCards tbody tr{
+.tableContainer__infoCards tbody tr{
     background-image: url(../resorces/TBOI_Pag/Backgrounds_Pag/infofondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-#tableContainer__infoCards tbody tr td{
+.tableContainer__infoCards tbody tr td{
     color: #f4f3f2;
     text-align: center;
     min-width: 100px;

@@ -6,7 +6,7 @@ const render = async () => {
 const achievements = await obtenerData();
 console.log(achievements);
 
-const sizeTextinfoCards = document.querySelector('.sizeTextinfoCards');
+const sizeTextinfoCards = document.querySelector('.tableContainer');
 
 for (const achievement of achievements){
   const pageAchievements = new PageAchievements(achievement.id, achievement.image, achievement.name, achievement.description, achievement.unlock, achievement.secretNumber);
