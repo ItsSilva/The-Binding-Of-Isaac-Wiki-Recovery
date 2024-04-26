@@ -5,7 +5,7 @@
 export const obtenerData = async () => {
   const response = await fetch("../data/data.json");
   const data = await response.json();
-  return data.data[0];
+  return data.pagAchievement;
 };
 
 export class PageAchievements {
