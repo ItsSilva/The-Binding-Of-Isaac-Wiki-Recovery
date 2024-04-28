@@ -365,3 +365,74 @@ export class pagMonsters{
     return tr2;
     }
 }
+export class pagCharacters{
+  #id;
+  image;
+  name;
+  description;
+  item;
+  hp;
+  hp1;
+
+  constructor(id, image, name, description, item, hp, hp1){
+    this.#id = id;
+    this.image = image;
+    this.name = name;
+    this.description = description;
+    this.item = item;
+    this.hp = hp;
+    this.hp1 = hp1;
+  }
+  render(){
+    const tr2 = document.createElement("tr");
+
+    const td1 = document.createElement("td");
+    const img1 = document.createElement("img");
+    img1.src = this.image;
+    img1.alt = this.name;
+    td1.appendChild(img1);
+
+    const td2 = document.createElement("td");
+    const h2 = document.createElement("h2");
+    h2.textContent = this.name;
+    td2.appendChild(h2);
+
+    const td3 = document.createElement("td");
+    const p1 = document.createElement("p");
+    p1.textContent = this.description;
+    td3.appendChild(p1);
+
+    const td4 = document.createElement("td");
+    const img2 = document.createElement("img");
+    img2.src = this.item;
+    img2.alt = this.name;
+    td4.appendChild(img2);
+
+    const td5 = document.createElement("td");
+    const img3 = document.createElement("img");
+    img3.src = this.hp;
+    img3.alt = this.name;
+    const img4 = document.createElement("img");
+    img4.src = this.hp1;
+    img4.alt = this.name;
+    td5.appendChild(img3);
+    td5.appendChild(img4);
+
+    const td6 = document.createElement("td");
+    const aClass = document.createElement("a");
+    aClass.classList.add("tableContainer__infoCards--savecolor");
+    const iClass = document.createElement("i");
+    iClass.classList.add("fa-solid", "fa-bookmark", "fa-2x");
+    aClass.appendChild(iClass);
+    td6.appendChild(aClass); 
+
+    tr2.appendChild(td1);
+    tr2.appendChild(td2);
+    tr2.appendChild(td3);
+    tr2.appendChild(td4);
+    tr2.appendChild(td5);
+    tr2.appendChild(td6);
+
+    return tr2;
+  }
+}
