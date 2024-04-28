@@ -27,57 +27,8 @@ export class PageAchievements {
     this.#nodo = nodo;
   }
 
-  render() {
-    // Contenedor de tabla
-    // const tableContainer = document.createElement("div");
-    // tableContainer.classList.add("tableContainer");
-
-    // Creación de tabla
-    // const tableContainer__infoCards = document.createElement("table");
-    // tableContainer__infoCards.classList.add("tableContainer__infoCards");
-    // // tableContainer.appendChild(tableContainer__infoCards);
-
-    // // Creación de thead
-    // const thead = document.createElement("thead");
-    // tableContainer__infoCards.appendChild(thead);
-
-    // // Creación de tr1
-    // const tr1 = document.createElement("tr");
-    // thead.appendChild(tr1);
-
-    // // Creación de th
-    // const th1 = document.createElement("th");
-    // th1.textContent = "Image";
-
-    // const th2 = document.createElement("th");
-    // th2.textContent = "Name";
-
-    // const th3 = document.createElement("th");
-    // th3.textContent = "Description";
-
-    // const th4 = document.createElement("th");
-    // th4.textContent = "Unlock";
-
-    // const th5 = document.createElement("th");
-    // th5.textContent = "Secret Number";
-
-    // const th6 = document.createElement("th");
-    // th6.textContent = "Save";
-
-    // tr1.appendChild(th1);
-    // tr1.appendChild(th2);
-    // tr1.appendChild(th3);
-    // tr1.appendChild(th4);
-    // tr1.appendChild(th5);
-    // tr1.appendChild(th6);
-
-    // Creación de tbody
-    // const tbody = document.createElement("tbody");
-    // tableContainer__infoCards.appendChild(tbody);
-
-    // Creación de tr2
+  render() { // Renderizar en la tabla PageAchievements
     const tr2 = document.createElement("tr");
-    // tbody.appendChild(tr2);
 
     // Creación de td
     const td1 = document.createElement("td");
@@ -116,3 +67,71 @@ export class PageAchievements {
     return tr2;
   }
 }
+
+export class PagBosses {
+  #id;
+  image;
+  name;
+  description;
+  behavior01;
+  behavior02;
+  behavior03;
+  #nodo;
+
+  constructor(id, image, name, description, behavior01, behavior02, behavior03, nodo) {
+    this.#id = id;
+    this.image = image;
+    this.name = name;
+    this.description = description;
+    this.behavior01 = behavior01;
+    this.behavior02 = behavior02;
+    this.behavior03 = behavior03;
+    this.#nodo = nodo;
+  }
+
+  render() { // Renderizar en la tabla PageBosses
+    const tr2 = document.createElement("tr");
+
+    const td1 = document.createElement("td");
+    const img = document.createElement("img");
+    img.src = this.image;
+    img.alt = this.name;
+    td1.appendChild(img);
+
+    const td2 = document.createElement("td");
+    const h2 = document.createElement("h2");
+    h2.textContent = this.name;
+    td2.appendChild(h2);
+
+    const td3 = document.createElement("td");
+    const p = document.createElement("p");
+    p.textContent = this.description;
+    const ul = document.createElement("ul");
+    const li1 = document.createElement("li");
+    li1.textContent = this.behavior01;
+    const li2 = document.createElement("li");
+    li2.textContent = this.behavior02;
+    const li3 = document.createElement("li");
+    li3.textContent = this.behavior03;
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+    td3.appendChild(p);
+
+    const td4 = document.createElement("td");
+    const aClass = document.createElement("a");
+    aClass.classList.add("tableContainer__infoCards--savecolor");
+    const iClass = document.createElement("i");
+    iClass.classList.add("fa-solid", "fa-bookmark", "fa-2x");
+    aClass.appendChild(iClass);
+    td4.appendChild(aClass);
+
+    tr2.appendChild(td1);
+    tr2.appendChild(td2);
+    tr2.appendChild(td3);
+    tr2.appendChild(td4);
+
+    return tr2;
+  }
+}
+
