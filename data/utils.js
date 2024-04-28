@@ -308,3 +308,60 @@ export class pagItems{
     return tr2;
   }
 }
+export class pagMonsters{
+    #id;
+    entity;
+    name;
+    idEntity;
+    description;
+    #nodo
+
+    constructor(id, entity, name, idEntity, description, nodo){
+        this.#id = id;
+        this.entity = entity;
+        this.name = name;
+        this.idEntity = idEntity;
+        this.description = description;
+        this.#nodo = nodo;
+    }
+    render(){
+    const tr2 = document.createElement("tr");
+
+      const td1 = document.createElement("td");
+      const img = document.createElement("img");
+      img.src = this.entity;
+      img.alt = this.name;
+      td1.appendChild(img);
+
+      const td2 = document.createElement("td");
+      const h2 = document.createElement("h2");
+      h2.textContent = this.name;
+      td2.appendChild(h2);
+
+      const td3 = document.createElement("td");
+      const p1 = document.createElement("p");
+      p1.textContent = this.idEntity;
+      td3.appendChild(p1);
+
+      const td4 = document.createElement("td");
+      const p2 = document.createElement("p");
+      p2.textContent = this.description;
+      td4.appendChild(p2);
+
+      const td5 = document.createElement("td");
+      const aClass = document.createElement("a");
+      aClass.classList.add("tableContainer__infoCards--savecolor");
+      const iClass = document.createElement("i");
+      iClass.classList.add("fa-solid", "fa-bookmark", "fa-2x");
+      aClass.appendChild(iClass);
+      td5.appendChild(aClass);      
+
+      tr2.appendChild(td1);
+      tr2.appendChild(td2);
+      tr2.appendChild(td3);
+      tr2.appendChild(td4);
+      tr2.appendChild(td5);
+
+    return tr2;
+    }
+}
