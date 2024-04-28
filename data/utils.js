@@ -136,3 +136,100 @@ export class PagBosses {
   }
 }
 
+export class pagChallenges{
+  #id;
+  name;
+  character;
+  condition1;
+  condition2;
+  treasureRoom;
+  shopRoom;
+  goal;
+  unlockedBy;
+  collapseUnlocks;
+  #nodo;
+  
+  constructor (id, name, character, condition1, condition2, treasureRoom, shopRoom, goal, unlockedBy, collapseUnlocks, nodo){
+    this.#id = id;
+    this.name = name;
+    this.character = character;
+    this.condition1 = condition1;
+    this.condition2 = condition2;
+    this.treasureRoom = treasureRoom;
+    this.shopRoom = shopRoom;
+    this.goal = goal;
+    this.unlockedBy = unlockedBy;
+    this.collapseUnlocks = collapseUnlocks;
+    this.#nodo = nodo;
+  }
+
+  render(){
+    const tr2 = document.createElement("tr");
+
+    const td1 = document.createElement("td");
+    const h2 = document.createElement("h2");
+    h2.textContent = this.name;
+    td1.appendChild(h2);
+
+    const td2 = document.createElement("td");
+    const img = document.createElement("img");
+    img.src = this.character;
+    img.alt = this.name;
+    td2.appendChild(img);
+
+    const td3 = document.createElement("td");
+    const ul1 = document.createElement("ul");
+    const li1 = document.createElement("li");
+    li1.textContent = this.condition1;
+    const li2 = document.createElement("li");
+    li2.textContent = this.condition2;
+    ul1.appendChild(li1);
+    ul1.appendChild(li2);
+    td3.appendChild(ul1);
+
+    const td4 = document.createElement("td");
+    const ul2 = document.createElement("ul");
+    const li3 = document.createElement("li");
+    li3.textContent = this.treasureRoom;
+    const li4 = document.createElement("li");
+    li4.textContent = this.shopRoom;
+    ul2.appendChild(li3);
+    ul2.appendChild(li4);
+    td4.appendChild(ul2);
+
+    const td5 = document.createElement("td");
+    const img2 = document.createElement("img");
+    img2.src = this.goal;
+    img2.alt = this.name;
+    td5.appendChild(img2);
+
+    const td6 = document.createElement("td");
+    const p = document.createElement("p");
+    p.textContent = this.unlockedBy;
+    td6.appendChild(p);
+
+    const td7 = document.createElement("td");
+    const p1 = document.createElement("p");
+    p1.textContent = this.collapseUnlocks;
+    td7.appendChild(p1);
+
+    const td8 = document.createElement("td");
+    const aClass = document.createElement("a");
+    aClass.classList.add("tableContainer__infoCards--savecolor");
+    const iClass = document.createElement("i");
+    iClass.classList.add("fa-solid", "fa-bookmark", "fa-2x");
+    aClass.appendChild(iClass);
+    td8.appendChild(aClass);
+
+    tr2.appendChild(td1);
+    tr2.appendChild(td2);
+    tr2.appendChild(td3);
+    tr2.appendChild(td4);
+    tr2.appendChild(td5);
+    tr2.appendChild(td6);
+    tr2.appendChild(td7);
+    tr2.appendChild(td8);
+
+    return tr2;
+  }
+}
