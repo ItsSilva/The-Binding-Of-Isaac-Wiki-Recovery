@@ -1,12 +1,29 @@
 const render = async () => {
 
-// Drop-down Profile
-let subMenu = document.getElementById("subMenu");
+  // Drop-down Profile
+  let subMenu = document.getElementById("subMenu");
+  let profileButton = document.querySelector('.saveBottom__user-pic');
 
-function toggleMenu(){
+  if (profileButton) {
+    profileButton.addEventListener('click', toggleMenu);
+  }
+
+  function toggleMenu() {
     subMenu.classList.toggle("open-menu");
-};
-// Drop-down Profile
+  }
+
+  // savecolor
+  let saveColors = document.querySelectorAll(".tableContainer__infoCards--savecolor");
+
+  function toggleClass(element, text) {
+    element.classList.toggle(text);
+  }
+
+  saveColors.forEach(function(saveColor) {
+    saveColor.addEventListener("click", function() {
+      toggleClass(this, "active");
+    });
+  });
 
 $('.owl-carousel.main').owlCarousel({
     loop:true,
