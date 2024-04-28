@@ -25,6 +25,31 @@ for (const achievement of data.pagChallenges){
   sizeTextinfoCards.appendChild(pageAchievementsRender);
 }
 
+  // Drop-down Profile
+  let subMenu = document.getElementById("subMenu");
+  let profileButton = document.querySelector('.saveBottom__user-pic');
+
+  if (profileButton) {
+    profileButton.addEventListener('click', toggleMenu);
+  }
+
+  function toggleMenu() {
+    subMenu.classList.toggle("open-menu");
+  }
+
+  // savecolor
+  let saveColors = document.querySelectorAll(".tableContainer__infoCards--savecolor");
+
+  function toggleClass(element, text) {
+    element.classList.toggle(text);
+  }
+
+  saveColors.forEach(function(saveColor) {
+    saveColor.addEventListener("click", function() {
+      toggleClass(this, "active");
+    });
+  });
+  // savecolor
 };
 
-document.addEventListener("DOMContentLoaded", render);
+render();
