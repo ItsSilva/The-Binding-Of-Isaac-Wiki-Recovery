@@ -117,6 +117,7 @@ export class PagBosses {
     ul.appendChild(li2);
     ul.appendChild(li3);
     td3.appendChild(p);
+    td3.appendChild(ul);
 
     const td4 = document.createElement("td");
     const aClass = document.createElement("a");
