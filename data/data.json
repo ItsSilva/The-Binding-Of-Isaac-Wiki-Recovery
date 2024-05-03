@@ -138,7 +138,8 @@
             "description": "Isaac is the main character of the series, returning from the original The Binding of Isaac from 2011. Isaac is the only character unlocked by default.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_The_D6_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link" : "https://bindingofisaac.fandom.com/es/wiki/Isaac"
         },
         {
             "id": 2,
@@ -147,7 +148,8 @@
             "description": "Magdalene's strong point is her vitality. Her naturally high health and her starting item, Yum Heart, allow her to survive more damage than other characters.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_Yum_Heart_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx4.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link" : "https://bindingofisaac.fandom.com/es/wiki/Magdalena"
         },
         {
             "id": 3,
@@ -156,7 +158,8 @@
             "description": "Cain starts with slightly higher damage and speed than most characters, making him more agile and effective at the start. However, he has lower range and health than average, which means he has to put himself closer to danger and can take less punishment than most.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx2.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link" : "https://bindingofisaac.fandom.com/es/wiki/Cain"
         },
         {
             "id": 4,
@@ -165,7 +168,8 @@
             "description": "Judas is a character unlocked after beating Satan for the first time. Judas starts with one red heart container, and has The Book of Belial upon starting, as well as 3 coins. Judas also has a 1.35x damage multiplier.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_The_Book_of_Belial_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx1.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link" : "https://bindingofisaac.fandom.com/es/wiki/Judas"
         },
         {
             "id": 5,
@@ -174,7 +178,8 @@
             "description": "???, also known as the Blue Baby, is a character unlocked by defeating Mom's Heart ten times. He starts with three Soul Hearts, and his health meter is unique in that he cannot gain red heart containers. ",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_The_Poop_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/BlueHeartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link" : "https://bindingofisaac.fandom.com/es/wiki/%3F%3F%3F"
         },
         {
             "id": 5,
@@ -183,16 +188,18 @@
             "description": "Eve is a character unlocked by beating two floors in a row without collecting any heart pickups. Eve starts with two Red Heart containers, Whore of Babylon, and the Dead Bird.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_Razor_Blade_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx2.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Eva"
         },
         {
             "id": 6,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/sansom.png?raw=true",
-            "name": "Samson",
+            "name": "Samsón",
             "description": "Samson is a character unlocked by beating two floors in a row without taking any damage. Samson starts with 3 Red Heart containers and Bloody Lust.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Samson"
         },
         {
             "id": 7,
@@ -201,7 +208,8 @@
             "description": "Azazel is a character unlocked by making three deals with the Devil in one run. Azazel starts with a short-ranged version of Brimstone",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/BlackHeartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Azazel"
         },
         {
             "id": 8,
@@ -210,7 +218,8 @@
             "description": "Lazarus is a character unlocked by having four or more Soul Hearts (or Black Hearts) at once during a run. He was introduced in The Binding of Isaac: Rebirth. He starts with three red heart containers and a double-blue pill of a unidentified effect.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Lázaro"
         },
         {
             "id": 9,
@@ -219,7 +228,8 @@
             "description": "Eden is a character in The Binding of Isaac: Rebirth, unlocked by completing Womb for the first time. Eden is unique in that they are only playable when the player has at least one Eden Token.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Edén"
         },
         {
             "id": 10,
@@ -228,7 +238,8 @@
             "description": "The Lost is a secret character. The Lost starts with no health and cannot gain health by any means. Therefore, it will die from any damage taken. The Lost starts with flight.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/El_Perdido"
         },
         {
             "id": 11,
@@ -237,7 +248,8 @@
             "description": "Lilith is a character added in The Binding of Isaac: Afterbirth. Lilith starts with one red heart container and two Black Hearts. Lilith's starting items are the Box of Friends, Incubus and Cambion Conception. ",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_Box_of_Friends_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx1blackx2.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Lilith"
         },
         {
             "id": 12,
@@ -246,7 +258,8 @@
             "description": "Keeper is a secret character added in The Binding of Isaac: Afterbirth. Keeper is unlocked by donating 1000 coins to the Greed Donation Machine. Keeper starts with 1 Bomb and a triple shot similar to The Inner Eye.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_Wooden_Nickel_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/coins.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Keeper"
         },
         {
             "id": 13,
@@ -255,7 +268,8 @@
             "description": "Apollyon is a character added in The Binding of Isaac: Afterbirth †. He is unlocked after defeating Mega Satan for the first time. Apollyon starts with two Red Heart containers and Void.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_Void_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Apolión"
         },
         {
             "id": 14,
@@ -264,7 +278,8 @@
             "description": "The Forgotten is a secret character added in Booster Pack #5 that resembles a Bony. He cannot fire regular tears, and instead has a bone club that can be swung as a melee weapon or charged to be thrown.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/SkullHearts.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/BlueHeartsx1.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/BlueHeartsx1.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/El_Olvidado"
         },
         {
             "id": 15,
@@ -273,16 +288,18 @@
             "description": "Bethany is a character added in The Binding of Isaac: Repentance. She is unlocked by defeating Mom's Heart or It Lives in hard mode with Lazarus without losing a life.",
             "item": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Cards_Characters_Items_PNG/Collectible_Book_of_Virtues_icon.webp",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Bethany"
         },
         {
             "id": 16,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/jacobandesa.png?raw=true",
-            "name": "Jacob & Esau",
+            "name": "Jacob & Esaú",
             "description": "Jacob and Esau are a character pair added in The Binding of Isaac: Repentance. They are unlocked by defeating Mother with any character.",
             "item": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/clear2.png?raw=true",
             "hp": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx3.png?raw=true",
-            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx1bluex2.png?raw=true"
+            "hp1": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Hearts_PNG/Heartsx1bluex2.png?raw=true",
+            "link": "https://bindingofisaac.fandom.com/es/wiki/Jacob_%26_Esaú"
         }
     ],
     "pagItems":[
