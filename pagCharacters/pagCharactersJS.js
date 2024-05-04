@@ -14,11 +14,12 @@ const render = async () => {
       achievement.description,
       achievement.item,
       achievement.hp,
-      achievement.hp1
+      achievement.hp1,
+      achievement.link,
     );
     const pageAchievementsRender = pageAchievements.render();
-
     sizeTextinfoCards.appendChild(pageAchievementsRender);
+    pageAchievements.addEventListeners();
   }
 
   // Drop-down Profile

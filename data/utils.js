@@ -373,8 +373,10 @@ export class pagCharacters{
   item;
   hp;
   hp1;
+  link;
+  #nodoLink;
 
-  constructor(id, image, name, description, item, hp, hp1){
+  constructor(id, image, name, description, item, hp, hp1, link){
     this.#id = id;
     this.image = image;
     this.name = name;
@@ -382,14 +384,17 @@ export class pagCharacters{
     this.item = item;
     this.hp = hp;
     this.hp1 = hp1;
+    this.link = link;
   }
   render(){
     const tr2 = document.createElement("tr");
 
     const td1 = document.createElement("td");
     const img1 = document.createElement("img");
+    img1.classList.add("clickable");
     img1.src = this.image;
     img1.alt = this.name;
+    this.#nodoLink = img1;
     td1.appendChild(img1);
 
     const td2 = document.createElement("td");
@@ -434,5 +439,10 @@ export class pagCharacters{
     tr2.appendChild(td6);
 
     return tr2;
+  }
+  addEventListeners(){
+    this.#nodoLink.addEventListener("click", async() => {
+      window.open(this.link, "_blank")
+    });
   }
 }

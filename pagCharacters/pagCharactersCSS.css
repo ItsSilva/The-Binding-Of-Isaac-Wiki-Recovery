@@ -349,6 +349,9 @@ background-color: #C69C39;
 .tableContainer__infoCards tbody tr td ul li{
   list-style: none;
 }
+.clickable{
+  cursor: pointer;
+}
 
 /* savecolor */
 .tableContainer__infoCards--savecolor i{
