@@ -85,7 +85,7 @@ const render = async () => {
         await import('/data/session.js').then(async (module) => {
           await module.updateUserInfo(updatedInfo);
           alert('Información de usuario actualizada exitosamente.');
-          await render(); // Recargar la página después de actualizar la información
+          window.location.reload(); // Recargar la página después de actualizar la información
         });
       } else {
         alert('No se ha realizado ningún cambio en la información del usuario.');
