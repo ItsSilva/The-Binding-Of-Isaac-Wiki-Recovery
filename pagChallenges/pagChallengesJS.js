@@ -25,6 +25,25 @@ for (const achievement of data.pagChallenges){
 
   sizeTextinfoCards.appendChild(pageAchievementsRender);
 }
+// Función de búsqueda
+const searchInput = document.querySelector('.search-input');
+const searchRows = document.querySelectorAll('.tableContainer__infoCards tbody tr');
+
+searchInput.addEventListener('input', function() {
+  const searchTerm = searchInput.value.toLowerCase();
+  searchRows.forEach(function(row) {
+    const name = row.querySelector('td:nth-child(1)').textContent.toLowerCase(),
+      conditions = row.querySelector('td:nth-child(3)').textContent.toLowerCase(),
+      unlockedBy = row.querySelector('td:nth-child(6)').textContent.toLowerCase(),
+      unlocks = row.querySelector('td:nth-child(7)').textContent.toLowerCase();
+    if (name.includes(searchTerm) || conditions.includes(searchTerm) || unlockedBy.includes(searchTerm) || unlocks.includes(searchTerm)) {
+      row.style.display = 'table-row';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
+
 
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");

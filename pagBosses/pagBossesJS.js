@@ -30,8 +30,8 @@ searchInput.addEventListener('input', function() {
   const searchTerm = searchInput.value.toLowerCase();
   searchRows.forEach(function(row) {
     const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
-    const description = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
-    if (name.includes(searchTerm) || description.includes(searchTerm)) {
+    const behavior = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+    if (name.includes(searchTerm) || behavior.includes(searchTerm)) {
       row.style.display = 'table-row';
     } else {
       row.style.display = 'none';
