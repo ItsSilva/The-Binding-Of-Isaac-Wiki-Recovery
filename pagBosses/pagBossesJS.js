@@ -22,6 +22,24 @@ for (const achievement of data.pagBosses){
   sizeTextinfoCards.appendChild(pageAchievementsRender);
 }
 
+// Función de búsqueda
+const searchInput = document.querySelector('.search-input');
+const searchRows = document.querySelectorAll('.tableContainer__infoCards tbody tr');
+
+searchInput.addEventListener('input', function() {
+  const searchTerm = searchInput.value.toLowerCase();
+  searchRows.forEach(function(row) {
+    const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+    const description = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+    if (name.includes(searchTerm) || description.includes(searchTerm)) {
+      row.style.display = 'table-row';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
+
+
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.user-pic');
