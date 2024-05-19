@@ -3,7 +3,7 @@
 // const bosses = data.pageBosses;
 
 export const obtenerData = async () => {
-  const response = await fetch("../data/data.json");
+  const response = await fetch("https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/data/data.json");
   const data = await response.json();
   return data;
 };
