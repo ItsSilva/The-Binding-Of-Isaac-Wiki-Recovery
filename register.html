@@ -1,172 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Register</title>
-        <link rel="stylesheet" href="/styles/extend.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>  
-        <section class="register-container ">
-            <div class="welcome-page register-step active">
-                <div class="hero__title">
-                    <h1>WELCOME!</h1>
-                    <span>let's create your account</span>
-                </div>
-                <div class="hero__settings__step-action">
-                    <button class="next hero__primary-button" href="#">let´s start</button>
-                </div>
-                <img src="resorces\TBOI_Pag\Bosses_PNG\Boss_Gemini_portrait.webp" alt="">
-            </div>
 
-            <div class="register-step">
-                <ul class="register-step__progress-bar">
-                    <li class="step active"></li>
-                    <li class="step "></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
 
-                <div class="hero__title">
-                    <h1>NICKNAME</h1>
-                    <span>Tell us how would you like to be called?</span>
-                </div>
+<body>
+    <form id="registro">
+        <input type="email" id="correo" placeholder="Correo" required>
+        <input type="password" id="contrasena" placeholder="Contrasena" required>
+        <input type="password" id="confirmarContrasena" placeholder="Confirmar contrasena" required>
+        <button type="submit" value="Registrar">Registrarse</button>
+    </form>
+    <a href="./index.html">Iniciar sesion</a>
+</body>
+<footer>
+    <script type="module" src="./register.js"></script>
+</footer>
 
-                <div class="hero__settings__step-action">
-                    <div class="hero__input">
-                        <input type="text">
-                    </div>
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="register-step">
-                <ul class="register-step__progress-bar">
-                    <li class="step checked"></li>
-                    <li class="step active"></li>
-                    <li class="step "></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                </ul>
-
-                <div class="hero__title">
-                    <h1>AGE</h1>
-                    <span>How old ARE YOU?</span>
-                </div>
-
-                <div class="hero__settings__step-action">
-                    <div class="hero__input">
-                        <input type="number">
-                    </div>
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="register-step">
-                <ul class="register-step__progress-bar">
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step active"></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                </ul>
-
-                <div class="hero__title">
-                    <h1>GENDER</h1>
-                    <span>wich gender are you indetify?</span>
-                </div>
-
-                <div class="hero__settings__step-action">
-                    <div class="hero__input">
-                        <input type="text">
-                    </div>
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="register-step">
-                <ul class="register-step__progress-bar">
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step active"></li>
-                    <li class="step"></li>
-                    <li class="step"></li>
-                </ul>
-
-                <div class="hero__title">
-                    <h1>MAIL</h1>
-                    <span>ENTER YOUR MAIL</span>
-                </div>
-
-                <div class="hero__settings__step-action">
-                    <div class="hero__input">
-                        <input type="email">
-                    </div>
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="register-step">
-                <ul class="register-step__progress-bar">
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step active"></li>
-                    <li class="step "></li>
-                </ul>
-
-                <div class="hero__title">
-                    <h1>PASSWORD</h1>
-                    <span>Enter your password, make sure it is secure</span>
-                </div>
-
-                <div class="hero__settings__step-action">
-                    <div class="hero__show-password-container">
-                        <input type="password" placeholder="Password" class="hero__passwordInput">
-                        <input type="checkbox" class="hero__toggleVisibility">
-                    </div>
-                    <button class="next">Next</button>
-                </div>
-            </div>
-
-            <div class="register-step">
-                <ul class="register-step__progress-bar">
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step checked"></li>
-                    <li class="step active"></li>
-                </ul>
-
-                <div class="hero__title">
-                    <span>Now... enjoy all the information about binding of isaac at the reach of a click</span>
-                </div>
-
-                <div class="finish-image-container">
-                    <img class="finish-image-container__finish-image" src="resorces\TBOI_Pag\Memes_PNG\the-binding-of-isaac.gif" alt="">
-                </div>
-
-                <div class="hero__settings__step-action">
-                    <a href="index/index.html">
-                        <button class="next">Finish</button>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-    </body>
-    <footer>
-        <script src="register.js"></script>
-    </footer>
 </html>

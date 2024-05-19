@@ -1,44 +1,24 @@
-// Seleccionar todos los pasos del registro
-const registerSteps = document.querySelectorAll('.register-step');
-// Seleccionar los botones de "Next"
-const nextButtons = document.querySelectorAll('.hero__settings__step-action button.next');
+import { registrar } from './data/session.js';
 
-// Función para avanzar al siguiente paso
-function goToNextStep() {
-    console.log("sisas");
-    // Encontrar el paso activo actual
-    const currentStep = document.querySelector('.register-step.active');
-    // Encontrar el índice del paso actual
-    const currentIndex = Array.from(registerSteps).indexOf(currentStep);
-    
-    // Ocultar el paso actual
-    currentStep.classList.remove('active');
-    // Mostrar el siguiente paso
-    registerSteps[currentIndex + 1].classList.add('active');
-}
+const render = () => {
+    const registro = document.getElementById('registro');
 
-// Agregar event listener a cada botón "Next"
-nextButtons.forEach(button => {
-    button.addEventListener('click', goToNextStep);
-});
+    registro.addEventListener('submit', (e) => {
+        e.preventDefault();
 
+        const correo = e.target.correo.value;
+        const contrasena = e.target.contrasena.value;
+        const confirmarContrasena = e.target.confirmarContrasena.value;
 
-// Selecciona todos los contenedores de contraseña
-const passwordContainers = document.querySelectorAll('.hero__show-password-container');
-
-// Itera sobre cada contenedor
-passwordContainers.forEach(container => {
-    // Encuentra el input de contraseña y el checkbox dentro del contenedor actual
-    const passwordInput = container.querySelector('.hero__passwordInput');
-    const toggleVisibility = container.querySelector('.hero__toggleVisibility');
-
-    // Agrega un event listener a cada checkbox
-    toggleVisibility.addEventListener("change", function() {
-        // Cambia el tipo de entrada de contraseña según el estado del checkbox
-        if (toggleVisibility.checked) {
-            passwordInput.type = "text";
-        } else {
-            passwordInput.type = "password";
-        }
+// Funcion para registrar un usuario en el sistema y redirigir al usuario a la pagina de inicio de sesion 
+// si el registro fue exitoso o mostrar un mensaje de error si el registro no fue exitoso.
+        try {
+            registrar(correo, contrasena, confirmarContrasena);
+            alert('Usuario registrado exitosamente')
+            window.location.href = './index.html';
+        } catch (error) {
+            alert(error.message);
+        };
     });
-});
+};
+document.addEventListener('DOMContentLoaded', render);
