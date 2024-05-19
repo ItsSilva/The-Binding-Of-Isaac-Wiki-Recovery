@@ -15,7 +15,7 @@ const render = () => {
         try {
             registrar(correo, contrasena, confirmarContrasena);
             alert('Usuario registrado exitosamente')
-            window.location.href = './index.html';
+            window.location.href = '/index/index.html';
         } catch (error) {
             alert(error.message);
         };
