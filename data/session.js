@@ -73,3 +73,21 @@ export const obtenerUsuarioEnSesion = () => {
 export const logout = () => {
     localStorage.removeItem(USUARIOS_ACTIVO_KEY);
 };
+
+export const updateUserInfo = (updatedInfo) => {
+    const usuarioActivo = obtenerUsuarioEnSesion();
+  
+    if (!usuarioActivo) {
+      throw new Error('No hay un usuario activo en sesión.');
+    }
+  
+    const usuarios = obtenerUsuarios();
+    const updatedUsuarios = usuarios.map(user => {
+      if (user.id === usuarioActivo.id) {
+        return { ...user, ...updatedInfo };
+      }
+      return user;
+    });
+  
+    localStorage.setItem(USUARIOS_KEY, JSON.stringify(updatedUsuarios));
+  };
