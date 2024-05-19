@@ -46,13 +46,13 @@
                 <!-- Save Bottom -->
 
                 <!-- Drop-down Profile -->
-                <img class="user-pic" onclick="toggleMenu()" src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
+                <img class="saveBottom__user-pic" onclick="toggleMenu()" src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
 
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu-wrap__sub-menu">
                         <div class="sub-menu-wrap__sub-menu__user-info">
                             <img src="../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg">
-                            <h3>User name</h3>
+                            <h3 id="usuarioActivo"></h3>
                         </div>
                         <hr>
 
@@ -74,7 +74,7 @@
                         </a>
                         <a class="sub-menu-wrap__sub-meno-link" href="../index/index.html">
                             <i class="fa-solid fa-right-from-bracket" style="color: #1c1b21;"></i>
-                            <p>Logout</p>
+                            <p id="cerrarSesion">Logout</p>
                             <span>></span>
                         </a>
 
@@ -286,7 +286,7 @@
         <p>Copyright &copy;2024; Designed by <span class="footerBottom__designer">ItsSilva & Makurezzz</span> </p>
     </div>
 
-    <script src="pagSaveJS.js"></script>
+    <script type="module" src="pagSaveJS.js"></script>
 </footer>
 
 </html>

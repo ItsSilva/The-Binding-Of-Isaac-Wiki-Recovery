@@ -1,4 +1,5 @@
 import { obtenerData,  PagBosses} from '../data/utils.js';
+import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
 
 const render = async () => {
 
@@ -46,6 +47,22 @@ for (const achievement of data.pagBosses){
     });
   });
   // savecolor
+  const usuarioActivo = obtenerUsuarioEnSesion();
+
+// Importante para no perder nota.
+if (!usuarioActivo) {
+    window.location.href = '/index/index.html';
+    return;
+};
+
+const usuarioActivoNombre = document.querySelector('#usuarioActivo');
+usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo ;
+
+const cerrarSesion = document.querySelector('#cerrarSesion');
+cerrarSesion.addEventListener('click', () => {
+    logout();
+    window.location.href = '/index/index.html';
+});
 };
 
 render();
