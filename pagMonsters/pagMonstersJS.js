@@ -19,6 +19,23 @@ const render = async () => {
 
     sizeTextinfoCards.appendChild(pageAchievementsRender);
   }
+  // Función de búsqueda
+const searchInput = document.querySelector('.search-input');
+const searchRows = document.querySelectorAll('.tableContainer__infoCards tbody tr');
+
+searchInput.addEventListener('input', function() {
+  const searchTerm = searchInput.value.toLowerCase();
+  searchRows.forEach(function(row) {
+    const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+    const ID = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+    const description = row.querySelector('td:nth-child(4)').textContent.toLowerCase();
+    if (name.includes(searchTerm) || ID.includes(searchTerm) || description.includes(searchTerm)) {
+      row.style.display = 'table-row';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
 
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
