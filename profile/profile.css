@@ -172,12 +172,17 @@ a.sub-menu-wrap__sub-menu__sub-meno-link i {
 .entire__prof__cuadrado__FDP {
   width: 180px;
   height: 180px;
-  background-image: url(../resorces/TBOI_Pag/AboutUs_PNG/juan-silva.png);
+  background-image: url(../resorces/TBOI_Pag/Memes_PNG/😀👍🏻.jpeg);
   border-radius: 50%;
   background-position: center;
   background-size: contain;
 }
 .entire__prof__cuadrado__nick {
+  font-size: 1.875rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+#usuarioActivoNombreNombre{
   font-size: 1.875rem;
   font-weight: 200;
   color: #ffffff;

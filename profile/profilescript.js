@@ -27,7 +27,8 @@ const render = async () => {
         toggleClass(this, "active");
       });
     });
-  
+    
+  //obtener usuario en sesion
     const usuarioActivo = obtenerUsuarioEnSesion();
   
     // Importante para no perder nota.
@@ -38,6 +39,9 @@ const render = async () => {
     
     const usuarioActivoNombre = document.querySelector('#usuarioActivo');
     usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo ;
+
+    const usuarioActivoNombreNombre = document.querySelector('#usuarioActivoNombreNombre');
+    usuarioActivoNombreNombre.innerHTML = usuarioActivo.correo ;
     
     const cerrarSesion = document.querySelector('#cerrarSesion');
     cerrarSesion.addEventListener('click', () => {
