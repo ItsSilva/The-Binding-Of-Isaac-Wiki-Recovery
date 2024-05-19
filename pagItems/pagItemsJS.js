@@ -21,7 +21,25 @@ const render = async () => {
 
     sizeTextinfoCards.appendChild(pageAchievementsRender);
   }
+// Función de búsqueda
+const searchInput = document.querySelector('.search-input');
+const searchRows = document.querySelectorAll('.tableContainer__infoCards tbody tr');
 
+searchInput.addEventListener('input', function() {
+  const searchTerm = searchInput.value.toLowerCase();
+  searchRows.forEach(function(row) {
+    const name = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+    const ID = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+    const quote = row.querySelector('td:nth-child(4)').textContent.toLowerCase();
+    const description = row.querySelector('td:nth-child(5)').textContent.toLowerCase();
+    const quality = row.querySelector('td:nth-child(6)').textContent.toLowerCase();
+    if (name.includes(searchTerm) || ID.includes(searchTerm) || quote.includes(searchTerm) || description.includes(searchTerm) || quality.includes(searchTerm)) {
+      row.style.display = 'table-row';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.user-pic');
