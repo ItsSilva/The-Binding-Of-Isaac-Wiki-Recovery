@@ -1,3 +1,4 @@
+import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
 const render = async () => {
 
   // Drop-down Profile
@@ -45,5 +46,23 @@ $('.owl-carousel.main').owlCarousel({
         }
     }
 })
+const usuarioActivo = obtenerUsuarioEnSesion();
+
+// Importante para no perder nota.
+if (!usuarioActivo) {
+    window.location.href = '/index/index.html';
+    return;
+};
+
+const usuarioActivoNombre = document.querySelector('#usuarioActivo');
+usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo ;
+
+const cerrarSesion = document.querySelector('#cerrarSesion');
+cerrarSesion.addEventListener('click', () => {
+    logout();
+    window.location.href = '/index/index.html';
+});
+
 };
 document.addEventListener("DOMContentLoaded", render);
+
