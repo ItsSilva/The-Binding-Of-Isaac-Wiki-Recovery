@@ -29,7 +29,7 @@ export class PageAchievements {
 
   render() { // Renderizar en la tabla PageAchievements
     const tr2 = document.createElement("tr");
-
+    tr2.classList.add("card-tr");
     // Creación de td
     const td1 = document.createElement("td");
     const img = document.createElement("img");
@@ -91,6 +91,7 @@ export class PagBosses {
 
   render() { // Renderizar en la tabla PageBosses
     const tr2 = document.createElement("tr");
+    tr2.classList.add("card-tr");
 
     const td1 = document.createElement("td");
     const img = document.createElement("img");
@@ -165,6 +166,7 @@ export class pagChallenges{
 
   render(){
     const tr2 = document.createElement("tr");
+    tr2.classList.add("card-tr");
 
     const td1 = document.createElement("td");
     const h2 = document.createElement("h2");
@@ -257,6 +259,7 @@ export class pagItems{
 
   render (){
     const tr2 = document.createElement("tr");
+    tr2.classList.add("card-tr");
 
     const td1 = document.createElement("td");
     const h2 = document.createElement("h2");
@@ -326,6 +329,7 @@ export class pagMonsters{
     }
     render(){
     const tr2 = document.createElement("tr");
+    tr2.classList.add("card-tr");
 
       const td1 = document.createElement("td");
       const img = document.createElement("img");
@@ -388,6 +392,7 @@ export class pagCharacters{
   }
   render(){
     const tr2 = document.createElement("tr");
+    tr2.classList.add("card-tr");
 
     const td1 = document.createElement("td");
     const img1 = document.createElement("img");
@@ -446,3 +451,78 @@ export class pagCharacters{
     });
   }
 }
+
+// Guardar favoritos en el localStorage segun el usuario activo
+async function delayedExecution() {
+  await new Promise(resolve => setTimeout(resolve, 100)); // Esperar n segundo
+
+  // Función para obtener el ID del usuario activo del localStorage
+  const getActiveUserID = () => {
+      const activeUserID = localStorage.getItem('usuario-activo');
+      return activeUserID ? parseInt(activeUserID) : null; // Convertir a número entero si existe
+  };
+
+  // Función para obtener la lista de usuarios del localStorage
+  const getUsuariosFromLocalStorage = () => {
+      const usuariosJSON = localStorage.getItem('usuarios');
+      return usuariosJSON ? JSON.parse(usuariosJSON) : []; // Devolver un array vacío si no hay usuarios
+  };
+
+  // Función para guardar la lista de usuarios en el localStorage
+  const saveUsuariosToLocalStorage = (usuarios) => {
+      const usuariosJSON = JSON.stringify(usuarios);
+      localStorage.setItem('usuarios', usuariosJSON);
+  };
+
+  // Seleccionar todos los botones de guardar dentro de las filas de la tabla
+  let saveButtons = document.querySelectorAll('.tableContainer__infoCards--savecolor');
+  console.log("Página cargada");
+  console.log(saveButtons);
+
+  // Convertir la NodeList en un array y agregar el evento click
+  Array.from(saveButtons).forEach((button, index) => {
+      button.addEventListener("click", () => {
+
+          // Obtener el ID del usuario activo
+          const activeUserID = getActiveUserID();
+          // Verificar que hay un usuario activo
+          if (activeUserID) {
+              // Obtener el objeto de usuario correspondiente al ID
+              const usuarios = getUsuariosFromLocalStorage();
+              const activeUser = usuarios.find(usuario => usuario.id === activeUserID);
+              if (activeUser) {
+                  // Obtener la fila más cercana al botón
+                  const parentRow = button.closest('.card-tr');
+                  // Verificar que se ha encontrado la fila
+                  if (parentRow) {
+                      // Obtener los textos de los <td> en la fila y agregarlos al array
+                      const tdElements = parentRow.querySelectorAll('td');
+                      const tdValues = Array.from(tdElements).map(td => {
+                          if (td.querySelector('img')) {
+                              // Si hay una imagen dentro del <td>, obtener el src de la imagen
+                              return td.querySelector('img').getAttribute('src') + ' ' + td.textContent.trim();
+                          } else {
+                              // Si no hay imagen, solo obtener el texto del <td>
+                              return td.textContent.trim();
+                          }
+                      });
+                      // Actualizar los favoritos del usuario activo
+                      activeUser.favoritos.push(tdValues);
+                      // Guardar la lista de usuarios actualizada en el localStorage
+                      saveUsuariosToLocalStorage(usuarios);
+                      console.log("Favoritos guardados para el usuario activo:", activeUser.favoritos);
+                  } else {
+                      console.log(`Fila de la tabla no encontrada para el botón de guardar ${index}`);
+                  }
+              } else {
+                  console.log("Usuario activo no encontrado");
+              }
+          } else {
+              console.log("No hay usuario activo");
+          }
+      });
+  });
+}
+
+// Llamar a la función delayedExecution después de que la ventana haya cargado
+window.addEventListener("load", delayedExecution);
