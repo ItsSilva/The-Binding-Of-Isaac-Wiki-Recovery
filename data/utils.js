@@ -506,11 +506,16 @@ async function delayedExecution() {
                               return td.textContent.trim();
                           }
                       });
-                      // Actualizar los favoritos del usuario activo
-                      activeUser.favoritos.push(tdValues);
-                      // Guardar la lista de usuarios actualizada en el localStorage
-                      saveUsuariosToLocalStorage(usuarios);
-                      console.log("Favoritos guardados para el usuario activo:", activeUser.favoritos);
+                      // Verificar si el elemento ya está en la lista de favoritos
+                      if (!activeUser.favoritos.some(favorito => JSON.stringify(favorito) === JSON.stringify(tdValues))) {
+                          // Actualizar los favoritos del usuario activo solo si el elemento no está en la lista
+                          activeUser.favoritos.push(tdValues);
+                          // Guardar la lista de usuarios actualizada en el localStorage
+                          saveUsuariosToLocalStorage(usuarios);
+                          console.log("Favoritos guardados para el usuario activo:", activeUser.favoritos);
+                      } else {
+                          alert("Este elemento ya está en la lista de favoritos");
+                      }
                   } else {
                       console.log(`Fila de la tabla no encontrada para el botón de guardar ${index}`);
                   }
