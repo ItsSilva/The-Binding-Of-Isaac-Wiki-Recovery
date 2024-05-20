@@ -507,15 +507,19 @@ async function delayedExecution() {
                           }
                       });
                       // Verificar si el elemento ya está en la lista de favoritos
-                      if (!activeUser.favoritos.some(favorito => JSON.stringify(favorito) === JSON.stringify(tdValues))) {
-                          // Actualizar los favoritos del usuario activo solo si el elemento no está en la lista
-                          activeUser.favoritos.push(tdValues);
-                          // Guardar la lista de usuarios actualizada en el localStorage
-                          saveUsuariosToLocalStorage(usuarios);
-                          console.log("Favoritos guardados para el usuario activo:", activeUser.favoritos);
+                      const index = activeUser.favoritos.findIndex(favorito => JSON.stringify(favorito) === JSON.stringify(tdValues));
+                      if (index !== -1) {
+                          // Si el elemento ya está en la lista, eliminarlo y mostrar una alerta
+                          activeUser.favoritos.splice(index, 1);
+                          alert("Elemento eliminado de favoritos.");
                       } else {
-                          alert("Este elemento ya está en la lista de favoritos");
+                          // Si el elemento no está en la lista, agregarlo y mostrar una alerta
+                          activeUser.favoritos.push(tdValues);
+                          alert("Elemento agregado a favoritos.");
                       }
+                      // Guardar la lista de usuarios actualizada en el localStorage
+                      saveUsuariosToLocalStorage(usuarios);
+                      console.log("Favoritos actualizados para el usuario activo:", activeUser.favoritos);
                   } else {
                       console.log(`Fila de la tabla no encontrada para el botón de guardar ${index}`);
                   }
