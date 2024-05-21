@@ -615,7 +615,12 @@ export function cargarFavoritosEnTabla() {
         // Agregar un botón de "guardar" a la fila
         const saveButton = document.createElement('td');
         saveButton.classList.add('tableContainer__infoCards--savecolor');
-        saveButton.textContent = 'Guardar';
+        const saveLink = document.createElement('a');
+        saveLink.classList.add('tableContainer__infoCards--savecolor');
+        const saveIcon = document.createElement('i');
+        saveIcon.classList.add('fa-solid', 'fa-bookmark', 'fa-2x');
+        saveLink.appendChild(saveIcon);
+        saveButton.appendChild(saveLink);
         row.appendChild(saveButton);
 
         // Agregar la fila a la tabla
