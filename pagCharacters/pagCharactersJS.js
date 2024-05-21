@@ -23,6 +23,23 @@ const render = async () => {
     pageAchievements.addEventListeners();
   }
 
+  // Función de búsqueda
+  const searchInput = document.querySelector('.search-input');
+  const searchRows = document.querySelectorAll('.tableContainer__infoCards tbody tr');
+
+  searchInput.addEventListener('input', function () {
+    const searchTerm = searchInput.value.toLowerCase();
+    searchRows.forEach(function (row) {
+      const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+      const description = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+      if (name.includes(searchTerm) || description.includes(searchTerm)) {
+        row.style.display = 'table-row';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');
@@ -42,28 +59,29 @@ const render = async () => {
     element.classList.toggle(text);
   }
 
-  saveColors.forEach(function(saveColor) {
-    saveColor.addEventListener("click", function() {
+  saveColors.forEach(function (saveColor) {
+    saveColor.addEventListener("click", function () {
       toggleClass(this, "active");
     });
   });
+
   // savecolor
   const usuarioActivo = obtenerUsuarioEnSesion();
 
-// Importante para no perder nota.
-if (!usuarioActivo) {
+  // Importante para no perder nota.
+  if (!usuarioActivo) {
     window.location.href = '/index/index.html';
     return;
-};
+  };
 
-const usuarioActivoNombre = document.querySelector('#usuarioActivo');
-usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo ;
+  const usuarioActivoNombre = document.querySelector('#usuarioActivo');
+  usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo;
 
-const cerrarSesion = document.querySelector('#cerrarSesion');
-cerrarSesion.addEventListener('click', () => {
+  const cerrarSesion = document.querySelector('#cerrarSesion');
+  cerrarSesion.addEventListener('click', () => {
     logout();
     window.location.href = '/index/index.html';
-});
+  });
 };
 
 render();

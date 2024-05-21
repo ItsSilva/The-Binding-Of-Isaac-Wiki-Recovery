@@ -369,7 +369,7 @@ export class pagMonsters{
     return tr2;
     }
 }
-export class pagCharacters{
+export class pagCharacters {
   #id;
   image;
   name;
@@ -380,7 +380,7 @@ export class pagCharacters{
   link;
   #nodoLink;
 
-  constructor(id, image, name, description, item, hp, hp1, link){
+  constructor(id, image, name, description, item, hp, hp1, link) {
     this.#id = id;
     this.image = image;
     this.name = name;
@@ -390,7 +390,8 @@ export class pagCharacters{
     this.hp1 = hp1;
     this.link = link;
   }
-  render(){
+
+  render() {
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
 
@@ -434,7 +435,7 @@ export class pagCharacters{
     const iClass = document.createElement("i");
     iClass.classList.add("fa-solid", "fa-bookmark", "fa-2x");
     aClass.appendChild(iClass);
-    td6.appendChild(aClass); 
+    td6.appendChild(aClass);
 
     tr2.appendChild(td1);
     tr2.appendChild(td2);
@@ -445,13 +446,13 @@ export class pagCharacters{
 
     return tr2;
   }
-  addEventListeners(){
-    this.#nodoLink.addEventListener("click", async() => {
-      window.open(this.link, "_blank")
+
+  addEventListeners() {
+    this.#nodoLink.addEventListener("click", async () => {
+      window.open(this.link, "_blank");
     });
   }
 }
-
 // Guardar favoritos en el localStorage segun el usuario activo
 async function delayedExecution() {
   await new Promise(resolve => setTimeout(resolve, 100)); // Esperar n segundo
