@@ -559,8 +559,9 @@ export const saveUsuariosToLocalStorage = (usuarios) => {
   const usuariosJSON = JSON.stringify(usuarios);
   localStorage.setItem('usuarios', usuariosJSON);
 };
+
 // Función para cargar los favoritos del usuario activo en la tabla
-export function cargarFavoritosEnTabla() {
+export async function cargarFavoritosEnTabla() {
   // Obtener el ID del usuario activo
   const activeUserID = getActiveUserID();
 
@@ -580,11 +581,7 @@ export function cargarFavoritosEnTabla() {
 
       // Limpiar la tabla (omitiendo el thead)
       while (tbody.firstChild) {
-        if (tbody.firstChild.tagName !== 'THEAD') {
-          tbody.removeChild(tbody.firstChild);
-        } else {
-          break;
-        }
+        tbody.removeChild(tbody.firstChild);
       }
 
       // Iterar sobre la lista de favoritos del usuario activo

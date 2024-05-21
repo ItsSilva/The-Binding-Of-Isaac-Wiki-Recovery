@@ -1,9 +1,28 @@
 import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
-import { obtenerData, pagItems, getActiveUserID, getUsuariosFromLocalStorage, cargarFavoritosEnTabla } from '../data/utils.js';
+import { cargarFavoritosEnTabla } from '../data/utils.js';
 
-// Drop-down Profile
+// Función de búsqueda
+const applySearchFunction = () => {
+  const searchInput = document.querySelector('.search-input');
+  const tbody = document.querySelector('#tableContainer__infoCards tbody');
+
+  if (searchInput && tbody) {
+    console.log('searchInput and tbody found, applying search function.');
+    searchInput.addEventListener('input', function () {
+      const searchTerm = searchInput.value.toLowerCase();
+      const rows = tbody.querySelectorAll('tr');
+      rows.forEach(function (row) {
+        const cells = Array.from(row.querySelectorAll('td')).map(td => td.textContent.toLowerCase());
+        const match = cells.some(cell => cell.includes(searchTerm));
+        row.style.display = match ? 'table-row' : 'none';
+      });
+    });
+  } else {
+    console.error('searchInput or tbody is null.');
+  }
+};
+
 const render = async () => {
-
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');
@@ -16,6 +35,30 @@ const render = async () => {
     subMenu.classList.toggle("open-menu");
   }
 
+  const usuarioActivo = obtenerUsuarioEnSesion();
+
+  // Importante para no perder nota.
+  if (!usuarioActivo) {
+    window.location.href = '/index/index.html';
+    return;
+  }
+
+  const usuarioActivoNombre = document.querySelector('#usuarioActivo');
+  usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo;
+
+  const cerrarSesion = document.querySelector('#cerrarSesion');
+  cerrarSesion.addEventListener('click', () => {
+    logout();
+    window.location.href = '/index/index.html';
+  });
+
+  // Llamar a la función para cargar los favoritos en la tabla y esperar a que se complete
+  await cargarFavoritosEnTabla();
+
+  // Asegurarse de que los elementos necesarios existen antes de llamar a applySearchFunction
+  console.log('Calling applySearchFunction...');
+  applySearchFunction();
+
   // savecolor
   let saveColors = document.querySelectorAll(".tableContainer__infoCards--savecolor");
 
@@ -23,31 +66,11 @@ const render = async () => {
     element.classList.toggle(text);
   }
 
-  saveColors.forEach(function(saveColor) {
-    saveColor.addEventListener("click", function() {
+  saveColors.forEach(function (saveColor) {
+    saveColor.addEventListener("click", function () {
       toggleClass(this, "active");
     });
   });
-
-  const usuarioActivo = obtenerUsuarioEnSesion();
-
-  // Importante para no perder nota.
-  if (!usuarioActivo) {
-      window.location.href = '/index/index.html';
-      return;
-  };
-  
-  const usuarioActivoNombre = document.querySelector('#usuarioActivo');
-  usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo ;
-  
-  const cerrarSesion = document.querySelector('#cerrarSesion');
-  cerrarSesion.addEventListener('click', () => {
-      logout();
-      window.location.href = '/index/index.html';
-  });
-
-  // Llamar a la función para cargar los favoritos en la tabla
-  cargarFavoritosEnTabla();
 };
 
 document.addEventListener("DOMContentLoaded", render);
