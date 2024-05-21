@@ -610,16 +610,25 @@ export async function cargarFavoritosEnTabla() {
           row.appendChild(cell);
         }
 
-        // Agregar un botón de "guardar" a la fila
-        const saveButton = document.createElement('td');
-        saveButton.classList.add('tableContainer__infoCards--savecolor');
-        const saveLink = document.createElement('a');
-        saveLink.classList.add('tableContainer__infoCards--savecolor');
-        const saveIcon = document.createElement('i');
-        saveIcon.classList.add('fa-solid', 'fa-bookmark', 'fa-2x');
-        saveLink.appendChild(saveIcon);
-        saveButton.appendChild(saveLink);
-        row.appendChild(saveButton);
+        // Agregar un botón de "eliminar" a la fila
+        const deleteButton = document.createElement('td');
+        deleteButton.classList.add('tableContainer__infoCards--deletecolor');
+        const deleteLink = document.createElement('a');
+        deleteLink.classList.add('tableContainer__infoCards--deletecolor');
+        const deleteIcon = document.createElement('i');
+        deleteIcon.classList.add('fa-solid', 'fa-trash', 'fa-2x');
+        deleteLink.appendChild(deleteIcon);
+        deleteLink.addEventListener('click', () => {
+          // Eliminar el favorito del usuario activo
+          const index = activeUser.favoritos.indexOf(favorito);
+          if (index > -1) {
+            activeUser.favoritos.splice(index, 1);
+            saveUsuariosToLocalStorage(usuarios); // Guardar los cambios en localStorage
+            cargarFavoritosEnTabla(); // Recargar la tabla
+          }
+        });
+        deleteButton.appendChild(deleteLink);
+        row.appendChild(deleteButton);
 
         // Agregar la fila a la tabla
         tbody.appendChild(row);
