@@ -1,4 +1,5 @@
 import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
+import { obtenerData, pagItems, getActiveUserID, getUsuariosFromLocalStorage, cargarFavoritosEnTabla } from '../data/utils.js';
 
 // Drop-down Profile
 const render = async () => {
@@ -44,5 +45,9 @@ const render = async () => {
       logout();
       window.location.href = '/index/index.html';
   });
+
+  // Llamar a la función para cargar los favoritos en la tabla
+  cargarFavoritosEnTabla();
 };
+
 document.addEventListener("DOMContentLoaded", render);

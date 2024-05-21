@@ -535,3 +535,96 @@ async function delayedExecution() {
 
 // Llamar a la función delayedExecution después de que la ventana haya cargado
 window.addEventListener("load", delayedExecution);
+
+
+
+
+
+
+// Función para obtener el ID del usuario activo del localStorage
+export const getActiveUserID = () => {
+  const activeUserID = localStorage.getItem('usuario-activo');
+  return activeUserID ? parseInt(activeUserID) : null; // Convertir a número entero si existe
+};
+
+// Función para obtener la lista de usuarios del localStorage
+export const getUsuariosFromLocalStorage = () => {
+  const usuariosJSON = localStorage.getItem('usuarios');
+  return usuariosJSON ? JSON.parse(usuariosJSON) : []; // Devolver un array vacío si no hay usuarios
+};
+
+// Función para guardar la lista de usuarios en el localStorage
+export const saveUsuariosToLocalStorage = (usuarios) => {
+  const usuariosJSON = JSON.stringify(usuarios);
+  localStorage.setItem('usuarios', usuariosJSON);
+};
+// Función para cargar los favoritos del usuario activo en la tabla
+export function cargarFavoritosEnTabla() {
+  // Obtener el ID del usuario activo
+  const activeUserID = getActiveUserID();
+
+  // Verificar que hay un usuario activo
+  if (activeUserID) {
+    // Obtener la lista de usuarios del localStorage
+    const usuarios = getUsuariosFromLocalStorage();
+
+    // Encontrar el usuario activo
+    const activeUser = usuarios.find(usuario => usuario.id === activeUserID);
+
+    // Verificar que se encontró el usuario activo
+    if (activeUser) {
+      // Obtener la tabla donde se cargarán los favoritos
+      const table = document.getElementById('tableContainer__infoCards');
+      const tbody = table.getElementsByTagName('tbody')[0];
+
+      // Limpiar la tabla (omitiendo el thead)
+      while (tbody.firstChild) {
+        if (tbody.firstChild.tagName !== 'THEAD') {
+          tbody.removeChild(tbody.firstChild);
+        } else {
+          break;
+        }
+      }
+
+      // Iterar sobre la lista de favoritos del usuario activo
+      for (const favorito of activeUser.favoritos) {
+        // Crear una nueva fila
+        const row = document.createElement('tr');
+        row.classList.add('card-tr');
+
+        // Iterar sobre los valores del favorito y crear celdas
+        for (const value of favorito) {
+          const cell = document.createElement('td');
+          if (value.includes(' ')) {
+            // Si el valor contiene un espacio, es una imagen + texto
+            const [imageSource, ...text] = value.split(' ');
+            if (imageSource.startsWith('http')) {
+              // Si la fuente de la imagen es una URL válida, crear la imagen
+              const img = document.createElement('img');
+              img.src = imageSource;
+              cell.appendChild(img);
+            }
+            cell.appendChild(document.createTextNode(text.join(' ')));
+          } else {
+            // Si el valor no contiene espacio, es solo texto
+            cell.textContent = value;
+          }
+          row.appendChild(cell);
+        }
+
+        // Agregar un botón de "guardar" a la fila
+        const saveButton = document.createElement('td');
+        saveButton.classList.add('tableContainer__infoCards--savecolor');
+        saveButton.textContent = 'Guardar';
+        row.appendChild(saveButton);
+
+        // Agregar la fila a la tabla
+        tbody.appendChild(row);
+      }
+    } else {
+      console.log('Usuario activo no encontrado');
+    }
+  } else {
+    console.log('No hay usuario activo');
+  }
+}
