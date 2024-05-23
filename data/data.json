@@ -35,7 +35,7 @@
     ],
     "pagBosses": [
         {
-            "id": 1,
+            "id": 5,
             "image": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Bosses_PNG/Boss_Dingle_portrait.webp",
             "name": "Dingle",
             "description": "Dingle remains stationary and performs the following attacks:",
@@ -44,7 +44,7 @@
             "behavior03": "Dips caught in his dashes are knocked back a distance."
         },
         {
-            "id": 2,
+            "id": 6,
             "image": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Bosses_PNG/Boss_The_Duke_of_Flies_portrait.webp",
             "name": "The Duke of Flies",
             "description": "The Duke of Flies constantly floats around the room in diagonal directions. Knockback from tears and other sources can cause him to change travel direction. He has three attacks that he can perform while he floats:",
@@ -53,7 +53,7 @@
             "behavior03": "Sends any orbital Flies outward to chase Isaac."
         },
         {
-            "id": 3,
+            "id": 7,
             "image": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Bosses_PNG/Boss_Gemini_portrait.webp",
             "name": "Gemini",
             "description": "Gemini starts as a pair of bosses connected together by an umbilical cord.",
@@ -62,7 +62,7 @@
             "behavior03": "If Suture is killed first, there is no change to Contusion's behavior."
         },
         {
-            "id": 4,
+            "id": 8,
             "image": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Bosses_PNG/Boss_Monstro_portrait.webp",
             "name": "Monstro",
             "description": "",
@@ -74,7 +74,7 @@
     ],
     "pagChallenges":[
         {
-            "id": 1,
+            "id": 9,
             "name": "1. Pitch Black",
             "character": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Challenges_PNG/challengesisaac.png?raw=true",
             "condition1": "Curse of Darkness",
@@ -86,7 +86,7 @@
             "collapseUnlocks": "Rune of Hagalaz"
         },
         {
-            "id": 2,
+            "id": 10,
             "name": "2. High Brow",
             "character": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Challenges_PNG/challengesisaac.png?raw=true",
             "condition1": "Number OneE.",
@@ -100,7 +100,7 @@
             "collapseUnlocks": "Rune of Jera"
         },
         {
-            "id": 3,
+            "id": 11,
             "name": "3. Head Trauma",
             "character": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Challenges_PNG/challengesisaac.png?raw=true",
             "condition1": "Tiny Planet",
@@ -114,7 +114,7 @@
             "collapseUnlocks": "Rune of Ehwaz"
         },
         {
-            "id": 4,
+            "id": 12,
             "name": "4. Darkness Falls",
             "character": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Challenges_PNG/challengeseve.png?raw=true",
             "condition1": "Pentagram",
@@ -132,7 +132,7 @@
     ],
     "pagCharacters":[
         {
-            "id": 1,
+            "id": 13,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/Isaac.png?raw=true",
             "name": "Isaac",
             "description": "Isaac is the main character of the series, returning from the original The Binding of Isaac from 2011. Isaac is the only character unlocked by default.",
@@ -142,7 +142,7 @@
             "link" : "https://bindingofisaac.fandom.com/es/wiki/Isaac"
         },
         {
-            "id": 2,
+            "id": 14,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/Magdalene.png?raw=true",
             "name": "Magdalene",
             "description": "Magdalene's strong point is her vitality. Her naturally high health and her starting item, Yum Heart, allow her to survive more damage than other characters.",
@@ -152,7 +152,7 @@
             "link" : "https://bindingofisaac.fandom.com/es/wiki/Magdalena"
         },
         {
-            "id": 3,
+            "id": 15,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/Cain.png?raw=true",
             "name": "Cain",
             "description": "Cain starts with slightly higher damage and speed than most characters, making him more agile and effective at the start. However, he has lower range and health than average, which means he has to put himself closer to danger and can take less punishment than most.",
@@ -162,7 +162,7 @@
             "link" : "https://bindingofisaac.fandom.com/es/wiki/Cain"
         },
         {
-            "id": 4,
+            "id": 16,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/Judas.png?raw=true",
             "name": "Judas",
             "description": "Judas is a character unlocked after beating Satan for the first time. Judas starts with one red heart container, and has The Book of Belial upon starting, as well as 3 coins. Judas also has a 1.35x damage multiplier.",
@@ -172,7 +172,7 @@
             "link" : "https://bindingofisaac.fandom.com/es/wiki/Judas"
         },
         {
-            "id": 5,
+            "id": 17,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/Bluebaby.png?raw=true",
             "name": "Blue Baby",
             "description": "???, also known as the Blue Baby, is a character unlocked by defeating Mom's Heart ten times. He starts with three Soul Hearts, and his health meter is unique in that he cannot gain red heart containers. ",
@@ -182,7 +182,7 @@
             "link" : "https://bindingofisaac.fandom.com/es/wiki/%3F%3F%3F"
         },
         {
-            "id": 5,
+            "id": 18,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/eve.png?raw=true",
             "name": "Eve",
             "description": "Eve is a character unlocked by beating two floors in a row without collecting any heart pickups. Eve starts with two Red Heart containers, Whore of Babylon, and the Dead Bird.",
@@ -192,7 +192,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Eva"
         },
         {
-            "id": 6,
+            "id": 19,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/sansom.png?raw=true",
             "name": "Samsón",
             "description": "Samson is a character unlocked by beating two floors in a row without taking any damage. Samson starts with 3 Red Heart containers and Bloody Lust.",
@@ -202,7 +202,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Samson"
         },
         {
-            "id": 7,
+            "id": 20,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/azazel.png?raw=true",
             "name": "Azazel",
             "description": "Azazel is a character unlocked by making three deals with the Devil in one run. Azazel starts with a short-ranged version of Brimstone",
@@ -212,7 +212,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Azazel"
         },
         {
-            "id": 8,
+            "id": 21,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/lazarus.png?raw=true",
             "name": "Lazarus",
             "description": "Lazarus is a character unlocked by having four or more Soul Hearts (or Black Hearts) at once during a run. He was introduced in The Binding of Isaac: Rebirth. He starts with three red heart containers and a double-blue pill of a unidentified effect.",
@@ -222,7 +222,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Lázaro"
         },
         {
-            "id": 9,
+            "id": 22,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/eden.png?raw=true",
             "name": "Eden",
             "description": "Eden is a character in The Binding of Isaac: Rebirth, unlocked by completing Womb for the first time. Eden is unique in that they are only playable when the player has at least one Eden Token.",
@@ -232,7 +232,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Edén"
         },
         {
-            "id": 10,
+            "id": 23,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/thelost.png?raw=true",
             "name": "The Lost",
             "description": "The Lost is a secret character. The Lost starts with no health and cannot gain health by any means. Therefore, it will die from any damage taken. The Lost starts with flight.",
@@ -242,7 +242,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/El_Perdido"
         },
         {
-            "id": 11,
+            "id": 24,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/lillith.png?raw=true",
             "name": "Lilith",
             "description": "Lilith is a character added in The Binding of Isaac: Afterbirth. Lilith starts with one red heart container and two Black Hearts. Lilith's starting items are the Box of Friends, Incubus and Cambion Conception. ",
@@ -252,7 +252,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Lilith"
         },
         {
-            "id": 12,
+            "id": 25,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/thekepper.png?raw=true",
             "name": "Keeper",
             "description": "Keeper is a secret character added in The Binding of Isaac: Afterbirth. Keeper is unlocked by donating 1000 coins to the Greed Donation Machine. Keeper starts with 1 Bomb and a triple shot similar to The Inner Eye.",
@@ -262,7 +262,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Keeper"
         },
         {
-            "id": 13,
+            "id": 26,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/apollyo.png?raw=true",
             "name": "Apollyon",
             "description": "Apollyon is a character added in The Binding of Isaac: Afterbirth †. He is unlocked after defeating Mega Satan for the first time. Apollyon starts with two Red Heart containers and Void.",
@@ -272,7 +272,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Apolión"
         },
         {
-            "id": 14,
+            "id": 27,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/theforgotenthesoul.png?raw=true",
             "name": "The Forgotten",
             "description": "The Forgotten is a secret character added in Booster Pack #5 that resembles a Bony. He cannot fire regular tears, and instead has a bone club that can be swung as a melee weapon or charged to be thrown.",
@@ -282,7 +282,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/El_Olvidado"
         },
         {
-            "id": 15,
+            "id": 28,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/bethany.png?raw=true",
             "name": "Bethany",
             "description": "Bethany is a character added in The Binding of Isaac: Repentance. She is unlocked by defeating Mom's Heart or It Lives in hard mode with Lazarus without losing a life.",
@@ -292,7 +292,7 @@
             "link": "https://bindingofisaac.fandom.com/es/wiki/Bethany"
         },
         {
-            "id": 16,
+            "id": 29,
             "image": "https://github.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/blob/main/resorces/TBOI_Pag/Characters_PNG/jacobandesa.png?raw=true",
             "name": "Jacob & Esaú",
             "description": "Jacob and Esau are a character pair added in The Binding of Isaac: Repentance. They are unlocked by defeating Mother with any character.",
@@ -304,7 +304,7 @@
     ],
     "pagItems":[
         {
-            "id": 1,
+            "id": 30,
             "name": "???'s Only Friend",
             "itemID": "5.100.320",
             "icon": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Items_PNG/Collectible_Blue_Baby27s_Only_Friend_icon.webp",
@@ -313,7 +313,7 @@
             "quality": "1"
         },
         {
-            "id": 2,
+            "id": 31,
             "name": "Less Than Three",
             "itemID": "5.100.15",
             "icon": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Items_PNG/Collectible_Less_Than_Three_icon.webp",
@@ -322,7 +322,7 @@
             "quality": "2"
         },
         {
-            "id": 3,
+            "id": 32,
             "name": "1up!",
             "itemID": "5.100.11",
             "icon": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Items_PNG/Collectible_1up21_icon.webp",
@@ -331,7 +331,7 @@
             "quality": "2"
         },
         {
-            "id": 4,
+            "id": 33,
             "name": "20/20",
             "itemID": "5.100.245",
             "icon": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Items_PNG/Collectible_20_20_icon.webp",
@@ -342,28 +342,28 @@
     ],
     "pagMonsters":[
         {
-            "id": 1,
+            "id": 34,
             "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Gaper.webp",
             "name": "Gasper",
             "idEntity": "10.1",
             "description": "Walks towards Isaac, dealing contact damage. Usually turns into a Pacer or Gusher upon death."
         },
         {
-            "id": 2,
+            "id": 35,
             "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Gurgle.webp",
             "name": "Gurgle",
             "idEntity": "87.0",
             "description": "Walks towards Isaac, dealing contact damage and periodically firing Ipecac shots at him; they are immune to this explosion, but other enemies are not. Can turn into a Splasher upon death."
         },
         {
-            "id": 3,
+            "id": 36,
             "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Nulls.webp",
             "name": "Nulls",
             "idEntity": "252.0",
             "description": "Walks towards Isaac, dealing contact damage. Upon getting near Isaac, it will open its eyes, though its speed doesn't change. Fades into and out of visibility."
         },
         {
-            "id": 4,
+            "id": 37,
             "entity": "https://raw.githubusercontent.com/ItsSilva/The-Binding-Of-Isaac-Wiki-Recovery/main/resorces/TBOI_Pag/Monsters_PNG/Blue_Gaper.webp",
             "name": "Blue Gaper",
             "idEntity": "297.0",
