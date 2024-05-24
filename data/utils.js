@@ -9,7 +9,7 @@ export const obtenerData = async () => {
 };
 
 export class PageAchievements {
-  #id;
+  id;
   image;
   name;
   description;
@@ -18,7 +18,7 @@ export class PageAchievements {
   #nodo;
 
   constructor(id, image, name, description, unlock, secretNumber, nodo) {
-    this.#id = id;
+    this.id = id;
     this.image = image;
     this.name = name;
     this.description = description;
@@ -30,6 +30,11 @@ export class PageAchievements {
   render() { // Renderizar en la tabla PageAchievements
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
+
+    const td0 = document.createElement("td");
+    td0.textContent = this.id;
+    td0.classList.add("hidden");
+
     // Creación de td
     const td1 = document.createElement("td");
     const img = document.createElement("img");
@@ -57,6 +62,7 @@ export class PageAchievements {
     aClass.appendChild(iClass);
     td6.appendChild(aClass);
 
+    tr2.appendChild(td0);
     tr2.appendChild(td1);
     tr2.appendChild(td2);
     tr2.appendChild(td3);
@@ -69,7 +75,7 @@ export class PageAchievements {
 }
 
 export class PagBosses {
-  #id;
+  id;
   image;
   name;
   description;
@@ -79,7 +85,7 @@ export class PagBosses {
   #nodo;
 
   constructor(id, image, name, description, behavior01, behavior02, behavior03, nodo) {
-    this.#id = id;
+    this.id = id;
     this.image = image;
     this.name = name;
     this.description = description;
@@ -92,6 +98,10 @@ export class PagBosses {
   render() { // Renderizar en la tabla PageBosses
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
+
+    const td0 = document.createElement("td");
+    td0.textContent = this.id;
+    td0.classList.add("hidden");
 
     const td1 = document.createElement("td");
     const img = document.createElement("img");
@@ -128,6 +138,7 @@ export class PagBosses {
     aClass.appendChild(iClass);
     td4.appendChild(aClass);
 
+    tr2.appendChild(td0);
     tr2.appendChild(td1);
     tr2.appendChild(td2);
     tr2.appendChild(td3);
@@ -138,7 +149,7 @@ export class PagBosses {
 }
 
 export class pagChallenges{
-  #id;
+  id;
   name;
   character;
   condition1;
@@ -151,7 +162,7 @@ export class pagChallenges{
   #nodo;
   
   constructor (id, name, character, condition1, condition2, treasureRoom, shopRoom, goal, unlockedBy, collapseUnlocks, nodo){
-    this.#id = id;
+    this.id = id;
     this.name = name;
     this.character = character;
     this.condition1 = condition1;
@@ -167,6 +178,10 @@ export class pagChallenges{
   render(){
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
+
+    const td0 = document.createElement("td");
+    td0.textContent = this.id;
+    td0.classList.add("hidden");
 
     const td1 = document.createElement("td");
     const h2 = document.createElement("h2");
@@ -223,6 +238,7 @@ export class pagChallenges{
     aClass.appendChild(iClass);
     td8.appendChild(aClass);
 
+    tr2.appendChild(td0);
     tr2.appendChild(td1);
     tr2.appendChild(td2);
     tr2.appendChild(td3);
@@ -237,7 +253,7 @@ export class pagChallenges{
 }
 
 export class pagItems{
-  #id
+  id
   name;
   itemID;
   icon;
@@ -247,7 +263,7 @@ export class pagItems{
   #nodo
 
   constructor(id, name, itemID, icon, quote, description, quality, nodo){
-    this.#id = id;
+    this.id = id;
     this.name = name;
     this.itemID = itemID;
     this.icon = icon;
@@ -260,6 +276,10 @@ export class pagItems{
   render (){
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
+
+    const td0 = document.createElement("td");
+    td0.textContent = this.id;
+    td0.classList.add("hidden");
 
     const td1 = document.createElement("td");
     const h2 = document.createElement("h2");
@@ -300,6 +320,8 @@ export class pagItems{
     aClass.appendChild(iClass);
     td7.appendChild(aClass);
 
+    
+    tr2.appendChild(td0);
     tr2.appendChild(td1);
     tr2.appendChild(td2);
     tr2.appendChild(td3);
@@ -312,7 +334,7 @@ export class pagItems{
   }
 }
 export class pagMonsters{
-    #id;
+    id;
     entity;
     name;
     idEntity;
@@ -320,7 +342,7 @@ export class pagMonsters{
     #nodo
 
     constructor(id, entity, name, idEntity, description, nodo){
-        this.#id = id;
+        this.id = id;
         this.entity = entity;
         this.name = name;
         this.idEntity = idEntity;
@@ -330,6 +352,10 @@ export class pagMonsters{
     render(){
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
+
+    const td0 = document.createElement("td");
+    td0.textContent = this.id;
+    td0.classList.add("hidden");
 
       const td1 = document.createElement("td");
       const img = document.createElement("img");
@@ -360,6 +386,7 @@ export class pagMonsters{
       aClass.appendChild(iClass);
       td5.appendChild(aClass);      
 
+      tr2.appendChild(td0);
       tr2.appendChild(td1);
       tr2.appendChild(td2);
       tr2.appendChild(td3);
@@ -370,7 +397,7 @@ export class pagMonsters{
     }
 }
 export class pagCharacters {
-  #id;
+  id;
   image;
   name;
   description;
@@ -381,7 +408,7 @@ export class pagCharacters {
   #nodoLink;
 
   constructor(id, image, name, description, item, hp, hp1, link) {
-    this.#id = id;
+    this.id = id;
     this.image = image;
     this.name = name;
     this.description = description;
@@ -394,6 +421,10 @@ export class pagCharacters {
   render() {
     const tr2 = document.createElement("tr");
     tr2.classList.add("card-tr");
+
+    const td0 = document.createElement("td");
+    td0.textContent = this.id;
+    td0.classList.add("hidden");
 
     const td1 = document.createElement("td");
     const img1 = document.createElement("img");
@@ -437,6 +468,7 @@ export class pagCharacters {
     aClass.appendChild(iClass);
     td6.appendChild(aClass);
 
+    tr2.appendChild(td0);
     tr2.appendChild(td1);
     tr2.appendChild(td2);
     tr2.appendChild(td3);
@@ -494,7 +526,7 @@ async function delayedExecution() {
   // Seleccionar todos los botones de guardar dentro de las filas de la tabla
   let saveButtons = document.querySelectorAll('.tableContainer__infoCards--savecolor');
   console.log("Página cargada");
-  console.log(saveButtons);
+  // console.log(saveButtons);
 
   // Convertir la NodeList en un array y agregar el evento click
   Array.from(saveButtons).forEach((button, index) => {
@@ -514,24 +546,26 @@ async function delayedExecution() {
                   if (parentRow) {
                       // Obtener los textos de los <td> en la fila y agregarlos al array
                       const tdElements = parentRow.querySelectorAll('td');
-                      const tdValues = Array.from(tdElements).map(td => {
-                          if (td.querySelector('img')) {
-                              // Si hay una imagen dentro del <td>, obtener el src de la imagen
-                              return td.querySelector('img').getAttribute('src') + ' ' + td.textContent.trim();
-                          } else {
-                              // Si no hay imagen, solo obtener el texto del <td>
-                              return td.textContent.trim();
-                          }
-                      });
+                      console.log(tdElements[0]);
+                      const cardId = parseInt(tdElements[0].textContent);
+                      // const tdValues = Array.from(tdElements).map(td => {
+                      //     if (td.querySelector('img')) {
+                      //         // Si hay una imagen dentro del <td>, obtener el src de la imagen
+                      //         return td.querySelector('img').getAttribute('src') + ' ' + td.textContent.trim();
+                      //     } else {
+                      //         // Si no hay imagen, solo obtener el texto del <td>
+                      //         return td.textContent.trim();
+                      //     }
+                      // });
                       // Verificar si el elemento ya está en la lista de favoritos
-                      const index = activeUser.favoritos.findIndex(favorito => JSON.stringify(favorito) === JSON.stringify(tdValues));
+                      const index = activeUser.favoritos.findIndex(favorito => JSON.stringify(favorito) === JSON.stringify(cardId));
                       if (index !== -1) {
                           // Si el elemento ya está en la lista, eliminarlo y mostrar una alerta
                           activeUser.favoritos.splice(index, 1);
                           alert("Elemento eliminado de favoritos.");
                       } else {
                           // Si el elemento no está en la lista, agregarlo y mostrar una alerta
-                          activeUser.favoritos.push(tdValues);
+                          activeUser.favoritos.push(cardId);
                           alert("Elemento agregado a favoritos.");
                       }
                       // Guardar la lista de usuarios actualizada en el localStorage
