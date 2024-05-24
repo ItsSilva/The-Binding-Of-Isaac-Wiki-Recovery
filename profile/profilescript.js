@@ -38,10 +38,10 @@ const render = async () => {
   };
 
   const usuarioActivoNombre = document.querySelector('#usuarioActivo');
-  usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo ;
+  usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo;
 
   const usuarioActivoNombreNombre = document.querySelector('#usuarioActivoNombreNombre');
-  usuarioActivoNombreNombre.innerHTML = usuarioActivo.correo ;
+  usuarioActivoNombreNombre.innerHTML = usuarioActivo.correo;
 
   const cerrarSesion = document.querySelector('#cerrarSesion');
   cerrarSesion.addEventListener('click', () => {
@@ -50,36 +50,33 @@ const render = async () => {
   });
 
   // Función para actualizar la información del usuario
-  const updateUserInfo = async (type) => {
+  const updateUserInfo = async () => {
     const usuarioActivo = obtenerUsuarioEnSesion();
     if (!usuarioActivo) {
       window.location.href = '/index/index.html';
       return;
     }
 
-    let newValue;
-    if (type === 'email') {
-      newValue = document.querySelector('.hero__input input[type="email"]').value.trim();
-    } else {
-      newValue = document.querySelector('.hero__input input[type="password"]').value.trim();
-    }
+    const emailInput = document.querySelector('.hero__input input[type="email"]');
+    const passwordInput = document.querySelector('.hero__input input[type="password"]');
 
-    // Verificar si el campo está vacío
-    if (newValue === '') {
-      alert('No se puede enviar información vacía.');
+    // Verificar si los campos están vacíos
+    let updatedInfo = {};
+    if (emailInput.value.trim() !== '') {
+      if (emailInput.value.trim() !== usuarioActivo.correo) {
+        updatedInfo.correo = emailInput.value.trim();
+      }
+    } else if (passwordInput.value.trim() !== '') {
+      if (passwordInput.value.trim() !== usuarioActivo.contrasena) {
+        updatedInfo.contrasena = passwordInput.value.trim();
+      }
+    } else {
+      // Mostrar alerta si ambos campos están vacíos
+      alert('Por favor, ingrese un valor para al menos uno de los campos.');
       return;
     }
 
     try {
-      const updatedInfo = {};
-
-      // Actualizar correo o contraseña según el tipo
-      if (type === 'email' && newValue !== usuarioActivo.correo) {
-        updatedInfo.correo = newValue;
-      } else if (type === 'password' && newValue !== usuarioActivo.contrasena) {
-        updatedInfo.contrasena = newValue;
-      }
-
       // Validar si hay cambios para actualizar
       if (Object.keys(updatedInfo).length > 0) {
         await import('/data/session.js').then(async (module) => {
@@ -96,11 +93,8 @@ const render = async () => {
   };
 
   // Agregar evento de clic al botón "Change"
-  const changeEmailButton = document.querySelector('.hero__primary-button--gmail');
-  changeEmailButton.addEventListener('click', () => updateUserInfo('email'));
-
-  const changePasswordButton = document.querySelector('.hero__primary-button--password');
-  changePasswordButton.addEventListener('click', () => updateUserInfo('password'));
+  const changeButton = document.querySelector('.hero__primary-button');
+  changeButton.addEventListener('click', updateUserInfo);
 };
 
 document.addEventListener("DOMContentLoaded", render);
