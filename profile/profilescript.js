@@ -1,10 +1,9 @@
-import { obtenerUsuarioEnSesion, logout, updateUserInfo } from '/data/session.js';
+import { obtenerUsuarioEnSesion, logout, updateUserInfo as updateUserInfoInSession } from '/data/session.js';
 import { reiniciarPaginaUnaVez } from '/data/utils.js';
-// Drop-down Profile
+
 const render = async () => {
   const reiniciarPagina = reiniciarPaginaUnaVez();
-// reiniciarPagina();
-  // Drop-down Profile
+
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');
 
@@ -16,7 +15,6 @@ const render = async () => {
     subMenu.classList.toggle("open-menu");
   }
 
-  // savecolor
   let saveColors = document.querySelectorAll(".tableContainer__infoCards--savecolor");
 
   function toggleClass(element, text) {
@@ -29,14 +27,12 @@ const render = async () => {
     });
   });
 
-  // Obtener usuario en sesión
   const usuarioActivo = obtenerUsuarioEnSesion();
 
-  // Importante para no perder nota.
   if (!usuarioActivo) {
     window.location.href = '/index/index.html';
     return;
-  };
+  }
 
   const usuarioActivoNombre = document.querySelector('#usuarioActivo');
   usuarioActivoNombre.innerHTML = 'Bienvenido ' + usuarioActivo.correo;
@@ -50,7 +46,6 @@ const render = async () => {
     window.location.href = '/index/index.html';
   });
 
-  // Función para actualizar la información del usuario
   const updateUserInfo = async () => {
     const usuarioActivo = obtenerUsuarioEnSesion();
     if (!usuarioActivo) {
@@ -61,7 +56,6 @@ const render = async () => {
     const emailInput = document.querySelector('.hero__input input[type="email"]');
     const passwordInput = document.querySelector('.hero__input input[type="password"]');
 
-    // Verificar si los campos están vacíos
     let updatedInfo = {};
     let hasChanges = false;
 
@@ -81,23 +75,20 @@ const render = async () => {
     }
 
     try {
-      await import('/data/session.js').then(async (module) => {
-        await module.updateUserInfo(updatedInfo);
-        alert('Información de usuario actualizada exitosamente.');
-        window.location.reload(); // Recargar la página después de actualizar la información
-      });
+      await updateUserInfoInSession(updatedInfo);
+      alert('Información de usuario actualizada exitosamente.');
+      window.location.reload();
     } catch (error) {
       alert(`Error al actualizar la información del usuario: ${error.message}`);
     }
   };
 
-  // Agregar evento de clic al botón "Change"
   const changeButton = document.querySelector('.hero__primary-button');
   changeButton.addEventListener('click', updateUserInfo);
 };
 
 document.addEventListener("DOMContentLoaded", render);
-// Eliminar el item de sessionStorage cuando el usuario abandone la página
+
 window.addEventListener('beforeunload', () => {
   sessionStorage.removeItem('paginaReiniciada');
 });

@@ -19,41 +19,39 @@ export const registrar = (correo, contrasena, confirmarContrasena) => {
         throw new Error('Las contraseñas no coinciden');
     }
 
-// Correo
+    // Correo
     const usuarios = obtenerUsuarios();
 
     for (const usuario of usuarios) {
         if (usuario.correo === correo) {
             throw new Error('El correo ya está registrado');
-        };
-    };
+        }
+    }
 
-// Registrar usuario
+    // Registrar usuario
     usuarios.push({
         id: new Date().getTime(),
         correo: correo,
         contrasena: contrasena,
         favoritos: []
-    })
+    });
 
-// Guardar usuario (actualizar el local storage)
+    // Guardar usuario (actualizar el local storage)
     localStorage.setItem(USUARIOS_KEY, JSON.stringify(usuarios));
 };
 
-// Funcion para el login de un usuario en el sistema.
 export const login = (correo, contrasena) => {
     const usuarios = obtenerUsuarios();
-    for(const usuario of usuarios) {
+    for (const usuario of usuarios) {
         if (usuario.correo === correo && usuario.contrasena === contrasena) {
             localStorage.setItem(USUARIOS_ACTIVO_KEY, usuario.id);
             return usuario;
-        };
+        }
     }
 
     throw new Error('Correo y/o contraseña incorrectos');
 };
 
-// Funcion para obtener el usuario en sesion y redirecciona al usuario a la pagina de inicio de sesion si no hay un usuario en sesion.
 export const obtenerUsuarioEnSesion = () => {
     const usuarioActivo = localStorage.getItem(USUARIOS_ACTIVO_KEY);
 
@@ -62,32 +60,43 @@ export const obtenerUsuarioEnSesion = () => {
     }
 
     const usuarios = obtenerUsuarios();
-    for(const usuario of usuarios){
-        if (usuario.id === parseInt(usuarioActivo)){
+    for (const usuario of usuarios) {
+        if (usuario.id === parseInt(usuarioActivo)) {
             return usuario;
         }
     }
 
     return null;
 };
+
 export const logout = () => {
     localStorage.removeItem(USUARIOS_ACTIVO_KEY);
 };
 
 export const updateUserInfo = (updatedInfo) => {
     const usuarioActivo = obtenerUsuarioEnSesion();
-  
+
     if (!usuarioActivo) {
-      throw new Error('No hay un usuario activo en sesión.');
+        throw new Error('No hay un usuario activo en sesión.');
     }
-  
+
     const usuarios = obtenerUsuarios();
+    
+    // Verificar si el nuevo correo ya está registrado
+    if (updatedInfo.correo) {
+        for (const usuario of usuarios) {
+            if (usuario.correo === updatedInfo.correo && usuario.id !== usuarioActivo.id) {
+                throw new Error('El nuevo correo ya está registrado por otro usuario.');
+            }
+        }
+    }
+
     const updatedUsuarios = usuarios.map(user => {
-      if (user.id === usuarioActivo.id) {
-        return { ...user, ...updatedInfo };
-      }
-      return user;
+        if (user.id === usuarioActivo.id) {
+            return { ...user, ...updatedInfo };
+        }
+        return user;
     });
-  
+
     localStorage.setItem(USUARIOS_KEY, JSON.stringify(updatedUsuarios));
-  };
+};
