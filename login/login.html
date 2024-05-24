@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
 <body>
     <form id="login">
-        <input type="email" id="correo" placeholder="Correo" required>
-        <input type="password" id="contrasena" placeholder="Contrasena" required>
-        <button type="submit" value="Registrar">Iniciar sesion</button>
+        <p class="settings">Log in</p>
+        <input type="email" id="correo" placeholder="Email" required>
+        <input type="password" id="contrasena" placeholder="Password" required>
+        <button class="hero__primary-button" type="submit" value="Registrar">Log in</button>
+        <a class="hero__primary-button" href="/register.html">Register now!</a>
     </form>
-    <a href="/register.html">Register now!</a>
 </body>
 <footer><script type="module" src="./login.js"></script></footer>
 </html>

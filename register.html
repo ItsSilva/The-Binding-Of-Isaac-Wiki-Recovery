@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
     <title>Register</title>
 </head>
 
 <body>
     <form id="registro">
-        <input type="email" id="correo" placeholder="Correo" required>
-        <input type="password" id="contrasena" placeholder="Contrasena" required>
-        <input type="password" id="confirmarContrasena" placeholder="Confirmar contrasena" required>
-        <button type="submit" value="Registrar">Registrarse</button>
+        <p class="settings">Register</p>
+        <input type="email" id="correo" placeholder="Email" required>
+        <input type="password" id="contrasena" placeholder="Password" required>
+        <input type="password" id="confirmarContrasena" placeholder="Confirm password" required>
+        <button class="hero__primary-button" type="submit" value="Registrar">Register now!</button>
+        <a class="hero__primary-button" href="/login/login.html">Log in</a>
     </form>
-    <a href="/login/login.html">Iniciar sesion</a>
 </body>
 <footer>
     <script type="module" src="./register.js"></script>
