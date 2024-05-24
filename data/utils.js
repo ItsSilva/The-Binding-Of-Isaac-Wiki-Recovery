@@ -455,15 +455,15 @@ export class pagCharacters {
 }
 
 export function reiniciarPaginaUnaVez() {
-  // Comprobar si la página ya ha sido recargada antes
-  let reiniciada = localStorage.getItem('paginaReiniciada') === 'true';
+  // Comprobar si la página ya ha sido recargada en esta sesión
+  let reiniciada = sessionStorage.getItem('paginaReiniciada') === 'true';
 
   return function() {
     if (!reiniciada) {
-      // Recargar la página y marcar que ha sido recargada
-      localStorage.setItem('paginaReiniciada', 'true');
+      // Marcar que la página ha sido recargada en esta sesión
+      sessionStorage.setItem('paginaReiniciada', 'true');
       console.log("Página reiniciada");
-      //recargar la pagina
+      // Recargar la página
       window.location.reload();
     }
   };

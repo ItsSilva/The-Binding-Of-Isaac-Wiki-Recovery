@@ -1,7 +1,9 @@
-import { obtenerData, pagCharacters } from '../data/utils.js';
+import { obtenerData, pagCharacters, reiniciarPaginaUnaVez } from '../data/utils.js';
 import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
 
 const render = async () => {
+  const reiniciarPagina = reiniciarPaginaUnaVez();
+  reiniciarPagina();
   // class
   const data = await obtenerData();
 
@@ -85,3 +87,7 @@ const render = async () => {
 };
 
 render();
+// Eliminar el item de sessionStorage cuando el usuario abandone la página
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('paginaReiniciada');
+});

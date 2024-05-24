@@ -1,8 +1,11 @@
 import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
-import { cargarFavoritosEnTabla } from '../data/utils.js';
+import { cargarFavoritosEnTabla, reiniciarPaginaUnaVez } from '../data/utils.js';
 
 // Función de búsqueda
 const applySearchFunction = () => {
+  const reiniciarPagina = reiniciarPaginaUnaVez();
+reiniciarPagina();
+
   const searchInput = document.querySelector('.search-input');
   const tbody = document.querySelector('#tableContainer__infoCards tbody');
 

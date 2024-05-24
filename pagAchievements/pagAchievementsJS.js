@@ -91,5 +91,8 @@ searchInput.addEventListener('input', function() {
 
 render();
 
-
+// Eliminar el item de sessionStorage cuando el usuario abandone la página
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('paginaReiniciada');
+});
 

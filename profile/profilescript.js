@@ -1,8 +1,9 @@
 import { obtenerUsuarioEnSesion, logout, updateUserInfo } from '/data/session.js';
-
+import { reiniciarPaginaUnaVez } from '/data/utils.js';
 // Drop-down Profile
 const render = async () => {
-
+  const reiniciarPagina = reiniciarPaginaUnaVez();
+reiniciarPagina();
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');
