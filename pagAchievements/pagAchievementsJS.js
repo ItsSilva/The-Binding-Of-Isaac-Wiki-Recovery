@@ -1,7 +1,10 @@
 import { obtenerUsuarioEnSesion, logout } from "/data/session.js";
-import { obtenerData, PageAchievements } from "../data/utils.js";
+import { obtenerData, PageAchievements, reiniciarPaginaUnaVez } from "../data/utils.js";
 
 const render = async () => {
+  const reiniciarPagina = reiniciarPaginaUnaVez();
+reiniciarPagina();
+  
   //class
   const data = await obtenerData();
 

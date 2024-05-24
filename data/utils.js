@@ -453,6 +453,23 @@ export class pagCharacters {
     });
   }
 }
+
+export function reiniciarPaginaUnaVez() {
+  // Comprobar si la página ya ha sido recargada antes
+  let reiniciada = localStorage.getItem('paginaReiniciada') === 'true';
+
+  return function() {
+    if (!reiniciada) {
+      // Recargar la página y marcar que ha sido recargada
+      localStorage.setItem('paginaReiniciada', 'true');
+      console.log("Página reiniciada");
+      //recargar la pagina
+      window.location.reload();
+    }
+  };
+}
+
+
 // Guardar favoritos en el localStorage segun el usuario activo
 async function delayedExecution() {
   await new Promise(resolve => setTimeout(resolve, 100)); // Esperar n segundo
