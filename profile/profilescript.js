@@ -62,31 +62,29 @@ const render = async () => {
 
     // Verificar si los campos están vacíos
     let updatedInfo = {};
-    if (emailInput.value.trim() !== '') {
-      if (emailInput.value.trim() !== usuarioActivo.correo) {
-        updatedInfo.correo = emailInput.value.trim();
-      }
-    } else if (passwordInput.value.trim() !== '') {
-      if (passwordInput.value.trim() !== usuarioActivo.contrasena) {
-        updatedInfo.contrasena = passwordInput.value.trim();
-      }
-    } else {
-      // Mostrar alerta si ambos campos están vacíos
-      alert('Por favor, ingrese un valor para al menos uno de los campos.');
+    let hasChanges = false;
+
+    if (emailInput.value.trim() !== '' && emailInput.value.trim() !== usuarioActivo.correo) {
+      updatedInfo.correo = emailInput.value.trim();
+      hasChanges = true;
+    }
+
+    if (passwordInput.value.trim() !== '' && passwordInput.value.trim() !== usuarioActivo.contrasena) {
+      updatedInfo.contrasena = passwordInput.value.trim();
+      hasChanges = true;
+    }
+
+    if (!hasChanges) {
+      alert('No se ha realizado ningún cambio en la información del usuario.');
       return;
     }
 
     try {
-      // Validar si hay cambios para actualizar
-      if (Object.keys(updatedInfo).length > 0) {
-        await import('/data/session.js').then(async (module) => {
-          await module.updateUserInfo(updatedInfo);
-          alert('Información de usuario actualizada exitosamente.');
-          window.location.reload(); // Recargar la página después de actualizar la información
-        });
-      } else {
-        alert('No se ha realizado ningún cambio en la información del usuario.');
-      }
+      await import('/data/session.js').then(async (module) => {
+        await module.updateUserInfo(updatedInfo);
+        alert('Información de usuario actualizada exitosamente.');
+        window.location.reload(); // Recargar la página después de actualizar la información
+      });
     } catch (error) {
       alert(`Error al actualizar la información del usuario: ${error.message}`);
     }
