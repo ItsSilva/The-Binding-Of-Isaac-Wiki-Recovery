@@ -1,6 +1,8 @@
 import { obtenerUsuarioEnSesion, logout } from '/data/session.js';
+import { reiniciarPaginaUnaVez } from '/data/utils.js';
 const render = async () => {
-
+  const reiniciarPagina = reiniciarPaginaUnaVez();
+reiniciarPagina();
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');
@@ -66,3 +68,7 @@ cerrarSesion.addEventListener('click', () => {
 };
 document.addEventListener("DOMContentLoaded", render);
 
+// Eliminar el item de sessionStorage cuando el usuario abandone la página
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('paginaReiniciada');
+});

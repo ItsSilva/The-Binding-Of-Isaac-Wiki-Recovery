@@ -3,6 +3,7 @@ import { reiniciarPaginaUnaVez } from '/data/utils.js';
 
 const render = async () => {
   const reiniciarPagina = reiniciarPaginaUnaVez();
+  reiniciarPagina();
 
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');

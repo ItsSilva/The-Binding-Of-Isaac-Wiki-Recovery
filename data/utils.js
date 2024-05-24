@@ -454,20 +454,19 @@ export class pagCharacters {
   }
 }
 
-export function reiniciarPaginaUnaVez() {
-  // Comprobar si la página ya ha sido recargada en esta sesión
-  let reiniciada = sessionStorage.getItem('paginaReiniciada') === 'true';
+export const reiniciarPaginaUnaVez = () => {
+  let aplicada = false;
 
-  return function() {
-    if (!reiniciada) {
-      // Marcar que la página ha sido recargada en esta sesión
-      sessionStorage.setItem('paginaReiniciada', 'true');
+  return () => {
+    if (!aplicada) {
+      // Aquí va el código para reiniciar la página
       console.log("Página reiniciada");
-      // Recargar la página
-      window.location.reload();
+      aplicada = true;
+    } else {
+      console.log("La función ya se aplicó una vez, no se volverá a aplicar.");
     }
   };
-}
+};
 
 
 // Guardar favoritos en el localStorage segun el usuario activo
