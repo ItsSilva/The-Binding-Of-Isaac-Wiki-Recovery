@@ -3,7 +3,7 @@ import { reiniciarPaginaUnaVez } from '/data/utils.js';
 // Drop-down Profile
 const render = async () => {
   const reiniciarPagina = reiniciarPaginaUnaVez();
-reiniciarPagina();
+// reiniciarPagina();
   // Drop-down Profile
   let subMenu = document.getElementById("subMenu");
   let profileButton = document.querySelector('.saveBottom__user-pic');
@@ -97,3 +97,7 @@ reiniciarPagina();
 };
 
 document.addEventListener("DOMContentLoaded", render);
+// Eliminar el item de sessionStorage cuando el usuario abandone la página
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('paginaReiniciada');
+});

@@ -4,7 +4,7 @@ import { cargarFavoritosEnTabla, reiniciarPaginaUnaVez } from '../data/utils.js'
 // Función de búsqueda
 const applySearchFunction = () => {
   const reiniciarPagina = reiniciarPaginaUnaVez();
-reiniciarPagina();
+// reiniciarPagina();
 
   const searchInput = document.querySelector('.search-input');
   const tbody = document.querySelector('#tableContainer__infoCards tbody');
@@ -77,3 +77,6 @@ const render = async () => {
 };
 
 document.addEventListener("DOMContentLoaded", render);
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('paginaReiniciada');
+});
