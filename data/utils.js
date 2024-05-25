@@ -634,64 +634,67 @@ export async function cargarFavoritosEnTabla() {
         tbody.removeChild(tbody.firstChild);
       }
 
+      // Obtener la data del JSON
+      const data = await obtenerData();
+      const categories = ['pagCharacters', 'pagAchievement', 'pagBosses', 'pagChallenges', 'pagItems', 'pagMonsters'];
+
       // Iterar sobre la lista de favoritos del usuario activo
       for (const favorito of activeUser.favoritos) {
-        const activePrint = favorito;
-        const data = await obtenerData();
-        console.log(data);
-
-
-        // Filtrando de la data del JSON qué elementos de favoritos a guardado el usuario activo (cuáles se vana mostrar en la tabla). 
-        const filterFavorito = data.pagCharacters.filter((item) => item.id === activePrint);
-
-        console.log(filterFavorito);
-        console.log(filterFavorito2);
-        // Crear una nueva fila
-        const row = document.createElement('tr');
-        row.classList.add('card-tr');
-
-        // Iterar sobre los valores del favorito y crear celdas
-        for (const value of favorito) {
-          const cell = document.createElement('td');
-          if (value.includes(' ')) {
-            // Si el valor contiene un espacio, es una imagen + texto
-            const [imageSource, ...text] = value.split(' ');
-            if (imageSource.startsWith('http')) {
-              // Si la fuente de la imagen es una URL válida, crear la imagen
-              const img = document.createElement('img');
-              img.src = imageSource;
-              cell.appendChild(img);
-            }
-            cell.appendChild(document.createTextNode(text.join(' ')));
-          } else {
-            // Si el valor no contiene espacio, es solo texto
-            cell.textContent = value;
-          }
-          row.appendChild(cell);
+        // Filtrar y encontrar el favorito en todas las categorías
+        let favoritoData = null;
+        for (const category of categories) {
+          favoritoData = data[category].find(item => item.id === favorito);
+          if (favoritoData) break;
         }
 
-        // Agregar un botón de "eliminar" a la fila
-        const deleteButton = document.createElement('td');
-        deleteButton.classList.add('tableContainer__infoCards--deletecolor');
-        const deleteLink = document.createElement('a');
-        deleteLink.classList.add('tableContainer__infoCards--deletecolor');
-        const deleteIcon = document.createElement('i');
-        deleteIcon.classList.add('fa-solid', 'fa-trash', 'fa-2x');
-        deleteLink.appendChild(deleteIcon);
-        deleteLink.addEventListener('click', () => {
-          // Eliminar el favorito del usuario activo
-          const index = activeUser.favoritos.indexOf(favorito);
-          if (index > -1) {
-            activeUser.favoritos.splice(index, 1);
-            saveUsuariosToLocalStorage(usuarios); // Guardar los cambios en localStorage
-            cargarFavoritosEnTabla(); // Recargar la tabla
-          }
-        });
-        deleteButton.appendChild(deleteLink);
-        row.appendChild(deleteButton);
+        // Si se encontró el favorito, agregarlo a la tabla
+        if (favoritoData) {
+          console.log(favoritoData);
+          // Crear una nueva fila
+          const row = document.createElement('tr');
+          row.classList.add('card-tr');
 
-        // Agregar la fila a la tabla
-        tbody.appendChild(row);
+          // Iterar sobre las propiedades del favorito y crear celdas
+          for (const key in favoritoData) {
+            if (favoritoData.hasOwnProperty(key)) {
+              const cell = document.createElement('td');
+              const value = favoritoData[key];
+              if (typeof value === 'string' && value.startsWith('http')) {
+                // Si el valor es una URL de imagen
+                const img = document.createElement('img');
+                img.src = value;
+                cell.appendChild(img);
+              } else {
+                // Si el valor es texto
+                cell.textContent = value;
+              }
+              row.appendChild(cell);
+            }
+          }
+
+          // Agregar un botón de "eliminar" a la fila
+          const deleteButton = document.createElement('td');
+          deleteButton.classList.add('tableContainer__infoCards--deletecolor');
+          const deleteLink = document.createElement('a');
+          deleteLink.classList.add('tableContainer__infoCards--deletecolor');
+          const deleteIcon = document.createElement('i');
+          deleteIcon.classList.add('fa-solid', 'fa-trash', 'fa-2x');
+          deleteLink.appendChild(deleteIcon);
+          deleteLink.addEventListener('click', () => {
+            // Eliminar el favorito del usuario activo
+            const index = activeUser.favoritos.indexOf(favorito);
+            if (index > -1) {
+              activeUser.favoritos.splice(index, 1);
+              saveUsuariosToLocalStorage(usuarios); // Guardar los cambios en localStorage
+              cargarFavoritosEnTabla(); // Recargar la tabla
+            }
+          });
+          deleteButton.appendChild(deleteLink);
+          row.appendChild(deleteButton);
+
+          // Agregar la fila a la tabla
+          tbody.appendChild(row);
+        }
       }
     } else {
       console.log('Usuario activo no encontrado');
