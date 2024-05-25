@@ -636,6 +636,16 @@ export async function cargarFavoritosEnTabla() {
 
       // Iterar sobre la lista de favoritos del usuario activo
       for (const favorito of activeUser.favoritos) {
+        const activePrint = favorito;
+        const data = await obtenerData();
+        console.log(data);
+
+
+        // Filtrando de la data del JSON qué elementos de favoritos a guardado el usuario activo (cuáles se vana mostrar en la tabla). 
+        const filterFavorito = data.pagCharacters.filter((item) => item.id === activePrint);
+
+        console.log(filterFavorito);
+        console.log(filterFavorito2);
         // Crear una nueva fila
         const row = document.createElement('tr');
         row.classList.add('card-tr');
