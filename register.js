@@ -14,7 +14,7 @@ const render = () => {
 // si el registro fue exitoso o mostrar un mensaje de error si el registro no fue exitoso.
         try {
             registrar(correo, contrasena, confirmarContrasena);
-            alert('Usuario registrado exitosamente')
+            alert('Successfully registered user')
             window.location.href = '/index/index.html';
         } catch (error) {
             alert(error.message);

@@ -562,11 +562,11 @@ async function delayedExecution() {
                       if (index !== -1) {
                           // Si el elemento ya está en la lista, eliminarlo y mostrar una alerta
                           activeUser.favoritos.splice(index, 1);
-                          alert("Elemento eliminado de favoritos.");
+                          alert("Item removed from favorites.");
                       } else {
                           // Si el elemento no está en la lista, agregarlo y mostrar una alerta
                           activeUser.favoritos.push(cardId);
-                          alert("Elemento agregado a favoritos.");
+                          alert("Item added to favorites.");
                       }
                       // Guardar la lista de usuarios actualizada en el localStorage
                       saveUsuariosToLocalStorage(usuarios);

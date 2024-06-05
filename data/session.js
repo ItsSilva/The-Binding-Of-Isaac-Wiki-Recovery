@@ -16,7 +16,7 @@ const obtenerUsuarios = () => {
 // Contrasena
 export const registrar = (correo, contrasena, confirmarContrasena) => {
     if (contrasena !== confirmarContrasena){
-        throw new Error('Las contraseñas no coinciden');
+        throw new Error('Passwords do not match.');
     }
 
     // Correo
@@ -24,7 +24,7 @@ export const registrar = (correo, contrasena, confirmarContrasena) => {
 
     for (const usuario of usuarios) {
         if (usuario.correo === correo) {
-            throw new Error('El correo ya está registrado');
+            throw new Error('The email is already registered.');
         }
     }
 
@@ -49,7 +49,7 @@ export const login = (correo, contrasena) => {
         }
     }
 
-    throw new Error('Correo y/o contraseña incorrectos');
+    throw new Error('Incorrect email and/or password.');
 };
 
 export const obtenerUsuarioEnSesion = () => {
@@ -77,7 +77,7 @@ export const updateUserInfo = (updatedInfo) => {
     const usuarioActivo = obtenerUsuarioEnSesion();
 
     if (!usuarioActivo) {
-        throw new Error('No hay un usuario activo en sesión.');
+        throw new Error('There is no active user logged in.');
     }
 
     const usuarios = obtenerUsuarios();
@@ -86,7 +86,7 @@ export const updateUserInfo = (updatedInfo) => {
     if (updatedInfo.correo) {
         for (const usuario of usuarios) {
             if (usuario.correo === updatedInfo.correo && usuario.id !== usuarioActivo.id) {
-                throw new Error('El nuevo correo ya está registrado por otro usuario.');
+                throw new Error('The new email is already registered by another user.');
             }
         }
     }

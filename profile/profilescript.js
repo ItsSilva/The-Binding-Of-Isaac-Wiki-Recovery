@@ -71,16 +71,16 @@ const render = async () => {
     }
 
     if (!hasChanges) {
-      alert('No se ha realizado ningún cambio en la información del usuario.');
+      alert('No changes have been made to the user information.');
       return;
     }
 
     try {
       await updateUserInfoInSession(updatedInfo);
-      alert('Información de usuario actualizada exitosamente.');
+      alert('User information successfully updated.');
       window.location.reload();
     } catch (error) {
-      alert(`Error al actualizar la información del usuario: ${error.message}`);
+      alert(`Error updating user information: ${error.message}`);
     }
   };
 
